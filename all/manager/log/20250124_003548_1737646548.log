@@ -1,0 +1,6 @@
+time=2025-01-24T00:35:48.583+09:00 level=INFO msg="\n==========================================\n\tサーバー設定\n-------------------------------------------\nMode               : docker\nServer Port        : 8010\nProxy URL          : http://proxy:8080/api/register\nEstimation URL     : http://manager_estimation-api:8101/predict\nInquiry URL        : http://proxy:8080/api/inquiry\nDatabase ConnStr   : postgres://myuser:mypassword@postgres_manager:5432/managerdb?sslmode=disable\nSkip Registration  : false\nSystem URI         : manager\n==========================================\n\t" request_id=0
+time=2025-01-24T00:35:48.586+09:00 level=INFO msg=データベースに正常に接続しました request_id=0
+time=2025-01-24T00:35:48.586+09:00 level=INFO msg="ポート 8010 でサーバーを開始します。モード: docker" request_id=0
+time=2025-01-24T00:35:48.588+09:00 level=INFO msg=サーバーの登録が完了しました。 request_id=0
+time=2025-01-24T00:56:48.643+09:00 level=INFO msg="ユーザーID 2 のセッションを 2025-01-24 00:56:48.640786552 +0900 JST に終了しました" request_id=0
+time=2025-01-24T00:56:48.643+09:00 level=INFO msg="ユーザーID 2 のセッションを終了しました" request_id=0

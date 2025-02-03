@@ -1,0 +1,7 @@
+# config.toml
+
+[database]
+conn_str = "postgres://myuser:mypassword@postgres_proxy:5432/proxydb?sslmode=disable"
+
+[server]
+port = 8080

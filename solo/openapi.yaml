@@ -1,0 +1,257 @@
+openapi: 3.0.0
+info:
+  title: 信号データ管理API
+  version: "1.0.1"
+  description: >
+    このAPIは、BLEおよびWiFiデータの送信、ユーザーの在室履歴の取得、現在の在室者情報の取得、ヘルスチェックを提供します。
+servers:
+  - url: https://elpis-m1.kajilab.dev
+    description: 本番サーバ
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+  schemas:
+    UploadResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "信号データを受信しました"
+    RegisterRequest:
+      type: object
+      properties:
+        system_uri:
+          type: string
+          example: "https://example.com/system"
+        port:
+          type: integer
+          example: 8010
+      required:
+        - system_uri
+        - port
+    PresenceSession:
+      type: object
+      properties:
+        session_id:
+          type: integer
+          example: 1
+        user_id:
+          type: integer
+          example: 100
+        room_id:
+          type: integer
+          example: 10
+        start_time:
+          type: string
+          format: date-time
+          example: "2024-09-25T18:19:52.655914Z"
+        end_time:
+          type: string
+          format: date-time
+          nullable: true
+          example: "2024-09-25T18:20:40.184917Z"
+        last_seen:
+          type: string
+          format: date-time
+          example: "2024-09-25T18:19:52.782585Z"
+    UserPresenceDay:
+      type: object
+      properties:
+        date:
+          type: string
+          format: date
+          example: "2024-09-25"
+        sessions:
+          type: array
+          items:
+            $ref: '#/components/schemas/PresenceSession'
+    PresenceHistoryResponse:
+      type: object
+      properties:
+        history:
+          type: array
+          items:
+            $ref: '#/components/schemas/UserPresenceDay'
+    CurrentOccupant:
+      type: object
+      properties:
+        user_id:
+          type: string
+          example: "user1"
+        last_seen:
+          type: string
+          format: date-time
+          example: "2024-09-25T18:52:04.756201Z"
+    RoomOccupants:
+      type: object
+      properties:
+        room_id:
+          type: integer
+          example: 1
+        room_name:
+          type: string
+          example: "Graduate Students Room"
+        occupants:
+          type: array
+          items:
+            $ref: '#/components/schemas/CurrentOccupant'
+    CurrentOccupantsResponse:
+      type: object
+      properties:
+        rooms:
+          type: array
+          items:
+            $ref: '#/components/schemas/RoomOccupants'
+    HealthCheckResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          description: サーバの状態
+          enum: [ok, unreachable]
+          example: "ok"
+        database:
+          type: string
+          description: データベースの状態
+          enum: [reachable, unreachable]
+          example: "reachable"
+        timestamp:
+          type: string
+          format: date-time
+          example: "2024-09-25T12:00:00Z"
+paths:
+  /api/signals/submit:
+    post:
+      summary: BLEおよびWiFiデータの送信
+      description: >
+        BLEおよびWiFiのCSVファイルをサーバに送信します。Basic認証が必要です。
+      security:
+        - BasicAuth: []
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                ble_data:
+                  type: string
+                  format: binary
+                  description: BLEデータのCSVファイル
+                wifi_data:
+                  type: string
+                  format: binary
+                  description: WiFiデータのCSVファイル
+              required:
+                - ble_data
+                - wifi_data
+      responses:
+        "200":
+          description: データ受信成功
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UploadResponse'
+        "400":
+          description: リクエストエラー
+        "401":
+          description: 認証失敗
+        "500":
+          description: サーバエラー
+  /api/signals/server:
+    post:
+      summary: サーバ向けBLEおよびWiFiデータの送信
+      description: >
+        BLEおよびWiFiのCSVファイルをサーバに送信します。Basic認証が必要です。
+      security:
+        - BasicAuth: []
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                ble_data:
+                  type: string
+                  format: binary
+                  description: サーバ向けBLEデータのCSVファイル
+                wifi_data:
+                  type: string
+                  format: binary
+                  description: サーバ向けWiFiデータのCSVファイル
+              required:
+                - ble_data
+                - wifi_data
+      responses:
+        "200":
+          description: データ受信成功
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UploadResponse'
+        "400":
+          description: リクエストエラー
+        "401":
+          description: 認証失敗
+        "500":
+          description: サーバエラー
+  /api/presence_history:
+    get:
+      summary: ユーザーの在室履歴取得
+      description: >
+        指定されたユーザーIDの過去1ヶ月間の在室履歴を取得します。
+      parameters:
+        - in: query
+          name: user_id
+          schema:
+            type: integer
+          required: true
+          description: ユーザーのID
+      responses:
+        "200":
+          description: 在室履歴の取得に成功
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PresenceHistoryResponse'
+        "400":
+          description: リクエストパラメータエラー
+        "500":
+          description: サーバエラー
+  /api/current_occupants:
+    get:
+      summary: 現在の在室者情報取得
+      description: >
+        現在の各部屋の在室者情報を取得します。
+      responses:
+        "200":
+          description: 在室者情報の取得に成功
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CurrentOccupantsResponse'
+        "500":
+          description: サーバエラー
+  /health:
+    get:
+      summary: ヘルスチェック
+      description: >
+        サーバおよびデータベースの状態を確認します。
+      responses:
+        "200":
+          description: サーバが正常に動作しています
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthCheckResponse'
+        "503":
+          description: サーバまたはデータベースに問題があります
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthCheckResponse'
+security:
+  - BasicAuth: []

@@ -1,0 +1,223 @@
+services:
+  proxy:
+    image: golang:1.22.5-bookworm
+    ports:
+      - 8080:8080
+    volumes:
+      - ./proxy:/app
+      - /etc/localtime:/etc/localtime:ro
+    working_dir: /app
+    depends_on:
+      postgres_proxy:
+        condition: service_healthy
+    command: go run ./cmd/server.go
+    environment:
+      - TZ=Asia/Tokyo
+
+  manager:
+    image: golang:1.22.5-bookworm
+    ports:
+      - 8010:8010
+    volumes:
+      - ./manager:/app
+      - /etc/localtime:/etc/localtime:ro
+    working_dir: /app
+    depends_on:
+      proxy:
+        condition: service_started
+      postgres_manager:
+        condition: service_healthy
+    command: go run ./cmd/server.go
+    environment:
+      - TZ=Asia/Tokyo
+
+  echo:
+    image: golang:1.22.5-bookworm
+    ports:
+      - 8011:8011
+    volumes:
+      - ./echo:/app
+      - /etc/localtime:/etc/localtime:ro
+    working_dir: /app
+    depends_on:
+      proxy:
+        condition: service_started
+      postgres_echo:
+        condition: service_healthy
+    command: go run ./cmd/server.go
+    environment:
+      - TZ=Asia/Tokyo
+
+  manager_estimation-model:
+    image: python:3.12.7-bookworm
+    working_dir: /app
+    volumes:
+      - ./manager_estimation:/app
+      - ./manager_estimation/requirements.lock:/app/requirements.lock
+      - ./manager/manager_fingerprint:/app/manager_fingerprint
+    environment:
+      - TZ=Asia/Tokyo
+    command: >
+      /bin/sh -c "pip install uv && pip install --no-cache-dir -r requirements.lock && python ./src/estimation/main.py"
+    ports:
+      - "8200:8000"
+
+  manager_classification-model:
+    image: python:3.12.7-bookworm
+    working_dir: /app
+    volumes:
+      - ./manager_estimation:/app
+      - ./manager_estimation/requirements.lock:/app/requirements.lock
+      - ./manager/manager_fingerprint:/app/manager_fingerprint
+    environment:
+      - TZ=Asia/Tokyo
+    command: >
+      /bin/sh -c "pip install uv && pip install --no-cache-dir -r requirements.lock && python ./src/estimation/classification.py"
+    ports:
+      - "8300:8000"
+
+  manager_estimation-api:
+    image: python:3.12.7-bookworm
+    working_dir: /app
+    volumes:
+      - ./manager_estimation:/app
+      - ./manager_estimation/requirements.lock:/app/requirements.lock
+      - ./manager/manager_fingerprint:/app/manager_fingerprint
+    environment:
+      - TZ=Asia/Tokyo
+    command: >
+      /bin/sh -c "pip install uv && pip install --no-cache-dir -r requirements.lock && python ./src/estimation/app.py"
+    ports:
+      - "8101:8101"
+
+  echo_estimation-model:
+    image: python:3.12.7-bookworm
+    working_dir: /app
+    volumes:
+      - ./echo_estimation:/app
+      - ./echo_estimation/requirements.lock:/app/requirements.lock
+    environment:
+      - TZ=Asia/Tokyo
+    command: >
+      /bin/sh -c "pip install uv && pip install --no-cache-dir -r requirements.lock && python ./src/estimation/main.py"
+    ports:
+      - "8201:8000"
+
+  echo_estimation-api:
+    image: python:3.12.7-bookworm
+    working_dir: /app
+    volumes:
+      - ./echo_estimation:/app
+      - ./echo_estimation/requirements.lock:/app/requirements.lock
+    environment:
+      - TZ=Asia/Tokyo
+    command: >
+      /bin/sh -c "pip install uv && pip install --no-cache-dir -r requirements.lock && python ./src/estimation/app.py"
+    ports:
+      - "8102:8102"
+
+  postgres_manager:
+    image: postgres:16.3-bookworm
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: managerdb
+      TZ: Asia/Tokyo
+    ports:
+      - 5433:5432
+    volumes:
+      - ./manager/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - /etc/localtime:/etc/localtime:ro
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U myuser -d managerdb" ]
+      interval: 20s
+      retries: 10
+
+  postgres_proxy:
+    image: postgres:16.3-bookworm
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: proxydb
+      TZ: Asia/Tokyo
+    ports:
+      - 5434:5432
+    volumes:
+      - ./proxy/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - /etc/localtime:/etc/localtime:ro
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U myuser -d proxydb" ]
+      interval: 20s
+      retries: 10
+
+  postgres_echo:
+    image: postgres:16.3-bookworm
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: echodb
+      TZ: Asia/Tokyo
+    ports:
+      - 5435:5432
+    volumes:
+      - ./echo/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - /etc/localtime:/etc/localtime:ro
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U myuser -d echodb" ]
+      interval: 20s
+      retries: 10
+
+  manager_web:
+    image: node:22-bookworm-slim
+    volumes:
+      - ./manager_web:/app
+      - /app/node_modules
+      - /etc/localtime:/etc/localtime:ro
+    working_dir: /app
+    command: sh -c "npm install && npm run dev"
+    ports:
+      - '5173:5173'
+    environment:
+      - TZ=Asia/Tokyo
+
+  echo_web:
+    image: node:22-bookworm-slim
+    volumes:
+      - ./echo_web:/app
+      - /app/node_modules
+      - /etc/localtime:/etc/localtime:ro
+    working_dir: /app
+    command: sh -c "npm install && npm run dev"
+    ports:
+      - '5174:5174'
+    environment:
+      - TZ=Asia/Tokyo
+
+  swagger-editor:
+    image: swaggerapi/swagger-editor
+    container_name: "swagger-editor"
+    ports:
+      - "8001:8080"
+
+  swagger-ui:
+    image: swaggerapi/swagger-ui
+    container_name: "swagger-ui"
+    ports:
+      - "8002:8080"
+    volumes:
+      - ./openapi.yaml:/openapi.yaml
+    environment:
+      SWAGGER_JSON: /openapi.yaml
+
+  swagger-api:
+    image: stoplight/prism:3
+    container_name: "swagger-api"
+    ports:
+      - "8003:4010"
+    command: mock -h 0.0.0.0 /openapi.yaml
+    volumes:
+      - ./openapi.yaml:/openapi.yaml
+
+networks:
+  elpis_network:
+    external: true

@@ -1,0 +1,23 @@
+time=2025-01-24T00:35:15.032+09:00 level=INFO msg="\n==========================================\n\tサーバー設定\n-------------------------------------------\nMode               : docker\nServer Port        : 8010\nProxy URL          : http://proxy:8080/api/register\nEstimation URL     : http://manager_estimation-api:8101/predict\nInquiry URL        : http://proxy:8080/api/inquiry\nDatabase ConnStr   : postgres://myuser:mypassword@postgres_manager:5432/managerdb?sslmode=disable\nSkip Registration  : false\nSystem URI         : manager\n==========================================\n\t" request_id=0
+time=2025-01-24T00:35:15.035+09:00 level=INFO msg=データベースに正常に接続しました request_id=0
+time=2025-01-24T00:35:15.035+09:00 level=INFO msg="ポート 8010 でサーバーを開始します。モード: docker" request_id=0
+time=2025-01-24T00:35:15.037+09:00 level=INFO msg=サーバーの登録が完了しました。 request_id=0
+time=2025-01-24T00:35:37.532+09:00 level=INFO msg="IP: 172.18.0.1 | User-Agent: curl/8.7.1 | 時間: 1737646537 | メソッド: POST | URI: /api/signals/submit" request_id=1
+time=2025-01-24T00:35:37.541+09:00 level=INFO msg=推定サーバーへのリクエストを送信しています request_id=2
+time=2025-01-24T00:35:37.570+09:00 level=INFO msg="推定サーバーからの応答を受信しました: {PredictedPercentage:53}" request_id=2
+time=2025-01-24T00:35:37.570+09:00 level=INFO msg="推定信頼度を受信しました: 53" request_id=2
+time=2025-01-24T00:35:37.572+09:00 level=INFO msg=問い合わせサーバーへのリクエストを送信しています request_id=2
+time=2025-01-24T00:35:37.578+09:00 level=INFO msg="IP: 172.18.0.15 | User-Agent: Go-http-client/1.1 | 時間: 1737646537 | メソッド: POST | URI: /api/signals/server" request_id=3
+time=2025-01-24T00:35:37.579+09:00 level=INFO msg="POST /api/signals/server リクエストを受信しました" request_id=4
+time=2025-01-24T00:35:37.581+09:00 level=INFO msg=推定サーバーへのリクエストを送信しています request_id=4
+time=2025-01-24T00:35:37.590+09:00 level=INFO msg="推定サーバーからの応答を受信しました: {PredictedPercentage:53}" request_id=4
+time=2025-01-24T00:35:37.590+09:00 level=INFO msg="推定信頼度を受信しました: 53" request_id=4
+time=2025-01-24T00:35:37.590+09:00 level=INFO msg="POST /api/signals/server リクエストの処理が完了しました" request_id=4
+time=2025-01-24T00:35:37.590+09:00 level=INFO msg="ステータスコード: 200 | 応答ボディ: {\"percentage_processed\":53}" request_id=3
+time=2025-01-24T00:35:37.599+09:00 level=INFO msg="問い合わせサーバーからの応答を受信しました: {ServerConfidence:53}" request_id=2
+time=2025-01-24T00:35:37.599+09:00 level=INFO msg="問い合わせ信頼度を受信しました: 53" request_id=2
+time=2025-01-24T00:35:37.602+09:00 level=INFO msg="ビーコン UUID=FDA50693-A4E2-4FB1-AFCF-C6EB07647825 (RSSI=-80.00) に対するルームID=2 を見つけました" request_id=2
+time=2025-01-24T00:35:37.609+09:00 level=INFO msg="WiFi BSSID=60:84:bd:de:7c:67 (RSSI=-56.00) に対するルームID=3 を見つけました" request_id=2
+time=2025-01-24T00:35:37.609+09:00 level=INFO msg="ユーザーID 2 に対するルームID 2 を決定しました" request_id=2
+time=2025-01-24T00:35:37.612+09:00 level=INFO msg="ユーザーID 2 の新しいセッションをルームID 2 で開始しました" request_id=2
+time=2025-01-24T00:35:37.612+09:00 level=INFO msg="ステータスコード: 200 | 応答ボディ: {\"message\":\"シグナルデータを受信しました\"}" request_id=1

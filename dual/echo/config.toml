@@ -1,0 +1,19 @@
+mode = "docker"
+server_port = "8011"
+
+[Docker]
+proxy_url = "http://proxy:8080/api/register"
+inquiry_url = "http://proxy:8080/api/inquiry"
+estimation_url = "http://echo_estimation-api:8102/predict"
+db_conn_str = "postgres://myuser:mypassword@postgres_echo:5432/echodb?sslmode=disable"
+skip_registration = false
+
+[Local]
+proxy_url = "http://localhost:8080/api/register"
+inquiry_url = "http://localhost:8080/api/inquiry"
+estimation_url = "http://localhost:8101/predict"
+db_conn_str = "postgres://myuser:mypassword@localhost:5433/managerdb?sslmode=disable"
+skip_registration = false
+
+[Registration]
+system_uri = "echo"

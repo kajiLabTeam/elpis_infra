@@ -1,0 +1,1627 @@
+2025-01-06 23:51:45,175 [WARNING] No data loaded. Please check the CSV files in the directories.
+2025-01-06 23:58:24,069 [WARNING] No data loaded. Please check the CSV files in the directories.
+2025-01-07 00:00:12,320 [WARNING] No data loaded. Please check the CSV files in the directories.
+2025-01-07 00:04:25,729 [INFO] Scanning fingerprint directory: /manager/manager_fingerprint
+2025-01-07 00:04:25,732 [WARNING] No data loaded. Please check the CSV files in the directories.
+2025-01-07 09:10:18,596 [INFO] Scanning fingerprint directory: /manager/manager_fingerprint
+2025-01-07 09:10:18,599 [INFO] Found room directory: 414
+2025-01-07 09:10:18,602 [INFO] Loaded negative sample file: /manager/manager_fingerprint/414/ble_data_1736206055.csv
+2025-01-07 09:10:18,605 [INFO] Loaded negative sample file: /manager/manager_fingerprint/414/wifi_data_1736206055.csv
+2025-01-07 09:10:18,606 [INFO] Found room directory: 513
+2025-01-07 09:10:18,607 [INFO] Loaded positive sample file: /manager/manager_fingerprint/513/ble_data_1736206055.csv
+2025-01-07 09:10:18,610 [INFO] Loaded positive sample file: /manager/manager_fingerprint/513/wifi_data_1736206055.csv
+2025-01-07 09:10:18,610 [INFO] Total samples loaded: 11760
+2025-01-07 09:10:18,611 [INFO] Total data points: 11760
+2025-01-07 09:10:18,611 [INFO] Number of negative samples: 5880
+2025-01-07 09:10:18,611 [INFO] Number of positive samples: 5880
+2025-01-07 09:10:18,611 [INFO] Data head:
+2025-01-07 09:10:18,611 [INFO]        timestamp                              identifier  rssi  label
+0  1731584814688   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -90      0
+1  1731584819208   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -91      0
+2  1731584820718   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -91      0
+3  1731584822279   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9   -100      0
+4  1731584833346   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -92      0
+2025-01-07 09:10:18,615 [INFO] Class distribution:
+label
+0    5880
+1    5880
+Name: count, dtype: int64
+2025-01-07 09:10:18,615 [INFO] Unique identifiers: 54
+2025-01-07 09:10:18,615 [INFO] Sample data points:
+2025-01-07 09:10:18,616 [INFO]           timestamp           identifier  rssi  label
+4368  1731584904423   c8:a6:08:5b:16:00    -69      0
+8521  1731584869904   c8:a6:08:5a:bc:10    -79      1
+5527  1731584927777   84:af:ec:86:f0:70    -86      0
+1689  1731584850603   c8:a6:08:5b:16:21    -50      0
+9611  1731584891224   c8:a6:08:5b:16:20    -51      1
+2025-01-07 09:10:18,618 [INFO] Data types:
+timestamp      int64
+identifier    object
+rssi           int64
+label          int64
+dtype: object
+2025-01-07 09:10:18,619 [INFO] Missing values:
+timestamp     0
+identifier    0
+rssi          0
+label         0
+dtype: int64
+2025-01-07 09:10:18,619 [INFO] Unique timestamps: 130
+2025-01-07 09:10:18,673 [INFO] 
+Regression Evaluation Metrics:
+2025-01-07 09:10:18,674 [INFO] Mean Absolute Error (MAE): 0.00
+2025-01-07 09:10:18,674 [INFO] Mean Squared Error (MSE): 0.00
+2025-01-07 09:10:18,675 [INFO] R² Score: 1.00
+2025-01-07 09:10:25,238 [INFO] 
+Best Hyperparameters:
+2025-01-07 09:10:25,238 [INFO] {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-01-07 09:10:25,275 [INFO] 
+Regression Evaluation Metrics After Hyperparameter Tuning:
+2025-01-07 09:10:25,278 [INFO] Mean Absolute Error (MAE): 0.00
+2025-01-07 09:10:25,278 [INFO] Mean Squared Error (MSE): 0.00
+2025-01-07 09:10:25,278 [INFO] R² Score: 1.00
+2025-01-07 09:10:25,352 [INFO] 
+Model and scaler have been saved to the 'model' directory.
+2025-01-07 09:10:25,353 [INFO] 
+Pivot columns have been saved to the 'model' directory.
+2025-01-07 09:10:25,354 [INFO] Processing judgement file: /app/judgement/negative_rouka.csv
+2025-01-07 09:10:25,375 [INFO] File: /app/judgement/negative_rouka.csv - Predicted Percentage: 0.00%
+2025-01-07 09:10:25,379 [INFO] Processing judgement file: /app/judgement/insei_to_gakubu_kabe.csv
+2025-01-07 09:10:25,419 [INFO] File: /app/judgement/insei_to_gakubu_kabe.csv - Predicted Percentage: 0.00%
+2025-01-07 09:10:25,429 [INFO] Processing judgement file: /app/judgement/rouka_to_insei.csv
+2025-01-07 09:10:25,454 [INFO] File: /app/judgement/rouka_to_insei.csv - Predicted Percentage: 0.00%
+2025-01-07 09:10:25,455 [INFO] Processing judgement file: /app/judgement/gakubu_to_insei_kabe.csv
+2025-01-07 09:10:25,475 [INFO] File: /app/judgement/gakubu_to_insei_kabe.csv - Predicted Percentage: 0.00%
+2025-01-07 09:10:25,478 [INFO] Processing judgement file: /app/judgement/positive_gakubu.csv
+2025-01-07 09:10:25,496 [INFO] File: /app/judgement/positive_gakubu.csv - Predicted Percentage: 0.00%
+2025-01-07 09:10:25,497 [INFO] Processing judgement file: /app/judgement/rouka_to_gakubu.csv
+2025-01-07 09:10:25,525 [INFO] File: /app/judgement/rouka_to_gakubu.csv - Predicted Percentage: 0.00%
+2025-01-07 09:10:25,526 [INFO] Processing judgement file: /app/judgement/positive_insei.csv
+2025-01-07 09:10:25,531 [ERROR] Error processing file /app/judgement/positive_insei.csv: Found array with 0 sample(s) (shape=(0, 54)) while a minimum of 1 is required by StandardScaler.
+2025-01-07 09:10:25,544 [INFO] 
+Judgement results saved to 'model/judgement_results.csv'
+2025-01-07 09:10:25,545 [INFO]                    filename  predicted_percentage
+0        negative_rouka.csv                   0.0
+1  insei_to_gakubu_kabe.csv                   0.0
+2        rouka_to_insei.csv                   0.0
+3  gakubu_to_insei_kabe.csv                   0.0
+4       positive_gakubu.csv                   0.0
+5       rouka_to_gakubu.csv                   0.0
+6        positive_insei.csv                   NaN
+2025-01-07 09:18:36,177 [INFO] Scanning fingerprint directory: /manager/manager_fingerprint
+2025-01-07 09:18:36,177 [INFO] Found room directory: 414
+2025-01-07 09:18:36,180 [INFO] Loaded negative sample file: /manager/manager_fingerprint/414/ble_data_1736206055.csv
+2025-01-07 09:18:36,183 [INFO] Loaded negative sample file: /manager/manager_fingerprint/414/wifi_data_1736206055.csv
+2025-01-07 09:18:36,183 [INFO] Found room directory: 513
+2025-01-07 09:18:36,185 [INFO] Loaded positive sample file: /manager/manager_fingerprint/513/ble_data_1736206055.csv
+2025-01-07 09:18:36,188 [INFO] Loaded positive sample file: /manager/manager_fingerprint/513/wifi_data_1736206055.csv
+2025-01-07 09:18:36,189 [INFO] Total samples loaded: 11760
+2025-01-07 09:18:36,189 [INFO] Total data points: 11760
+2025-01-07 09:18:36,189 [INFO] Number of negative samples: 5880
+2025-01-07 09:18:36,189 [INFO] Number of positive samples: 5880
+2025-01-07 09:18:36,190 [INFO] Data head:
+2025-01-07 09:18:36,190 [INFO]        timestamp                              identifier  rssi  label
+0  1731584814688   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -90      0
+1  1731584819208   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -91      0
+2  1731584820718   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -91      0
+3  1731584822279   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9   -100      0
+4  1731584833346   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -92      0
+2025-01-07 09:18:36,194 [INFO] Class distribution:
+label
+0    5880
+1    5880
+Name: count, dtype: int64
+2025-01-07 09:18:36,194 [INFO] Unique identifiers: 54
+2025-01-07 09:18:36,194 [INFO] Sample data points:
+2025-01-07 09:18:36,195 [INFO]            timestamp           identifier  rssi  label
+10733  1731584913561   c8:a6:08:5b:16:20    -51      1
+3014   1731584877012   c8:a6:08:9b:15:50    -82      0
+5217   1731584921684   9e:f8:4a:36:a6:a9    -87      0
+6428   1731584828260   c8:a6:08:9a:bb:80    -85      1
+9747   1731584894275   60:f4:94:f1:84:d0    -88      1
+2025-01-07 09:18:36,198 [INFO] Data types:
+timestamp      int64
+identifier    object
+rssi           int64
+label          int64
+dtype: object
+2025-01-07 09:18:36,198 [INFO] Missing values:
+timestamp     0
+identifier    0
+rssi          0
+label         0
+dtype: int64
+2025-01-07 09:18:36,199 [INFO] Unique timestamps: 130
+2025-01-07 09:18:36,248 [INFO] 
+Regression Evaluation Metrics:
+2025-01-07 09:18:36,248 [INFO] Mean Absolute Error (MAE): 0.00
+2025-01-07 09:18:36,248 [INFO] Mean Squared Error (MSE): 0.00
+2025-01-07 09:18:36,248 [INFO] R² Score: 1.00
+2025-01-07 09:18:40,118 [INFO] 
+Best Hyperparameters:
+2025-01-07 09:18:40,118 [INFO] {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-01-07 09:18:40,129 [INFO] 
+Regression Evaluation Metrics After Hyperparameter Tuning:
+2025-01-07 09:18:40,129 [INFO] Mean Absolute Error (MAE): 0.00
+2025-01-07 09:18:40,129 [INFO] Mean Squared Error (MSE): 0.00
+2025-01-07 09:18:40,131 [INFO] R² Score: 1.00
+2025-01-07 09:18:40,168 [INFO] 
+Model and scaler have been saved to the 'model' directory.
+2025-01-07 09:18:40,171 [INFO] 
+Pivot columns have been saved to the 'model' directory.
+2025-01-07 09:18:40,171 [INFO] Processing judgement file: /app/judgement/negative_rouka.csv
+2025-01-07 09:18:40,187 [INFO] File: /app/judgement/negative_rouka.csv - Predicted Percentage: 0.00%
+2025-01-07 09:18:40,188 [INFO] Processing judgement file: /app/judgement/insei_to_gakubu_kabe.csv
+2025-01-07 09:18:40,200 [INFO] File: /app/judgement/insei_to_gakubu_kabe.csv - Predicted Percentage: 0.00%
+2025-01-07 09:18:40,201 [INFO] Processing judgement file: /app/judgement/rouka_to_insei.csv
+2025-01-07 09:18:40,211 [INFO] File: /app/judgement/rouka_to_insei.csv - Predicted Percentage: 0.00%
+2025-01-07 09:18:40,215 [INFO] Processing judgement file: /app/judgement/gakubu_to_insei_kabe.csv
+2025-01-07 09:18:40,225 [INFO] File: /app/judgement/gakubu_to_insei_kabe.csv - Predicted Percentage: 0.00%
+2025-01-07 09:18:40,231 [INFO] Processing judgement file: /app/judgement/positive_gakubu.csv
+2025-01-07 09:18:40,239 [INFO] File: /app/judgement/positive_gakubu.csv - Predicted Percentage: 0.00%
+2025-01-07 09:18:40,241 [INFO] Processing judgement file: /app/judgement/rouka_to_gakubu.csv
+2025-01-07 09:18:40,251 [INFO] File: /app/judgement/rouka_to_gakubu.csv - Predicted Percentage: 0.00%
+2025-01-07 09:18:40,251 [INFO] Processing judgement file: /app/judgement/positive_insei.csv
+2025-01-07 09:18:40,254 [ERROR] Error processing file /app/judgement/positive_insei.csv: Found array with 0 sample(s) (shape=(0, 54)) while a minimum of 1 is required by StandardScaler.
+2025-01-07 09:18:40,256 [INFO] 
+Judgement results saved to 'model/judgement_results.csv'
+2025-01-07 09:18:40,256 [INFO]                    filename  predicted_percentage
+0        negative_rouka.csv                   0.0
+1  insei_to_gakubu_kabe.csv                   0.0
+2        rouka_to_insei.csv                   0.0
+3  gakubu_to_insei_kabe.csv                   0.0
+4       positive_gakubu.csv                   0.0
+5       rouka_to_gakubu.csv                   0.0
+6        positive_insei.csv                   NaN
+2025-01-07 09:22:16,548 [INFO] Scanning fingerprint directory: /manager/manager_fingerprint
+2025-01-07 09:22:16,549 [INFO] Found room directory: 414
+2025-01-07 09:22:16,551 [INFO] Loaded negative sample file: /manager/manager_fingerprint/414/ble_data_1736206055.csv
+2025-01-07 09:22:16,554 [INFO] Loaded negative sample file: /manager/manager_fingerprint/414/wifi_data_1736206055.csv
+2025-01-07 09:22:16,555 [INFO] Found room directory: 513
+2025-01-07 09:22:16,556 [INFO] Loaded positive sample file: /manager/manager_fingerprint/513/ble_data_1736206055.csv
+2025-01-07 09:22:16,559 [INFO] Loaded positive sample file: /manager/manager_fingerprint/513/wifi_data_1736206055.csv
+2025-01-07 09:22:16,559 [INFO] Total samples loaded: 11760
+2025-01-07 09:22:16,560 [INFO] Total data points: 11760
+2025-01-07 09:22:16,560 [INFO] Number of negative samples: 5880
+2025-01-07 09:22:16,560 [INFO] Number of positive samples: 5880
+2025-01-07 09:22:16,560 [INFO] Data head:
+2025-01-07 09:22:16,560 [INFO]        timestamp                              identifier  rssi  label
+0  1731584814688   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -90      0
+1  1731584819208   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -91      0
+2  1731584820718   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -91      0
+3  1731584822279   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9   -100      0
+4  1731584833346   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -92      0
+2025-01-07 09:22:16,564 [INFO] Class distribution:
+label
+0    5880
+1    5880
+Name: count, dtype: int64
+2025-01-07 09:22:16,564 [INFO] Unique identifiers: 54
+2025-01-07 09:22:16,564 [INFO] Sample data points:
+2025-01-07 09:22:16,565 [INFO]           timestamp           identifier  rssi  label
+9960  1731584898331   c8:a6:08:9a:b7:00    -87      1
+8386  1731584866850   c8:a6:08:9b:16:21    -54      1
+9650  1731584892240   c0:25:a2:a7:2e:2a    -48      1
+6146  1731584822174   c8:a6:08:9a:b7:04    -86      1
+2923  1731584875994   c8:a6:08:9a:fe:71    -91      0
+2025-01-07 09:22:16,568 [INFO] Data types:
+timestamp      int64
+identifier    object
+rssi           int64
+label          int64
+dtype: object
+2025-01-07 09:22:16,569 [INFO] Missing values:
+timestamp     0
+identifier    0
+rssi          0
+label         0
+dtype: int64
+2025-01-07 09:22:16,569 [INFO] Unique timestamps: 130
+2025-01-07 09:22:16,620 [INFO] 
+Regression Evaluation Metrics:
+2025-01-07 09:22:16,620 [INFO] Mean Absolute Error (MAE): 0.00
+2025-01-07 09:22:16,620 [INFO] Mean Squared Error (MSE): 0.00
+2025-01-07 09:22:16,621 [INFO] R² Score: 1.00
+2025-01-07 09:22:20,329 [INFO] 
+Best Hyperparameters:
+2025-01-07 09:22:20,329 [INFO] {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-01-07 09:22:20,345 [INFO] 
+Regression Evaluation Metrics After Hyperparameter Tuning:
+2025-01-07 09:22:20,345 [INFO] Mean Absolute Error (MAE): 0.00
+2025-01-07 09:22:20,346 [INFO] Mean Squared Error (MSE): 0.00
+2025-01-07 09:22:20,346 [INFO] R² Score: 1.00
+2025-01-07 09:22:20,372 [INFO] 
+Model and scaler have been saved to the 'model' directory.
+2025-01-07 09:22:20,373 [INFO] 
+Pivot columns have been saved to the 'model' directory.
+2025-01-07 09:22:20,374 [INFO] Processing judgement file: /app/judgement/negative_rouka.csv
+2025-01-07 09:22:20,394 [INFO] File: /app/judgement/negative_rouka.csv - Predicted Percentage: 0.00%
+2025-01-07 09:22:20,394 [INFO] Processing judgement file: /app/judgement/insei_to_gakubu_kabe.csv
+2025-01-07 09:22:20,432 [INFO] File: /app/judgement/insei_to_gakubu_kabe.csv - Predicted Percentage: 0.00%
+2025-01-07 09:22:20,433 [INFO] Processing judgement file: /app/judgement/rouka_to_insei.csv
+2025-01-07 09:22:20,461 [INFO] File: /app/judgement/rouka_to_insei.csv - Predicted Percentage: 0.00%
+2025-01-07 09:22:20,465 [INFO] Processing judgement file: /app/judgement/gakubu_to_insei_kabe.csv
+2025-01-07 09:22:20,511 [INFO] File: /app/judgement/gakubu_to_insei_kabe.csv - Predicted Percentage: 0.00%
+2025-01-07 09:22:20,511 [INFO] Processing judgement file: /app/judgement/positive_gakubu.csv
+2025-01-07 09:22:20,526 [INFO] File: /app/judgement/positive_gakubu.csv - Predicted Percentage: 0.00%
+2025-01-07 09:22:20,526 [INFO] Processing judgement file: /app/judgement/rouka_to_gakubu.csv
+2025-01-07 09:22:20,549 [INFO] File: /app/judgement/rouka_to_gakubu.csv - Predicted Percentage: 0.00%
+2025-01-07 09:22:20,549 [INFO] Processing judgement file: /app/judgement/positive_insei.csv
+2025-01-07 09:22:20,557 [ERROR] Error processing file /app/judgement/positive_insei.csv: Found array with 0 sample(s) (shape=(0, 54)) while a minimum of 1 is required by StandardScaler.
+2025-01-07 09:22:20,565 [INFO] 
+Judgement results saved to 'model/judgement_results.csv'
+2025-01-07 09:22:20,565 [INFO]                    filename  predicted_percentage
+0        negative_rouka.csv                   0.0
+1  insei_to_gakubu_kabe.csv                   0.0
+2        rouka_to_insei.csv                   0.0
+3  gakubu_to_insei_kabe.csv                   0.0
+4       positive_gakubu.csv                   0.0
+5       rouka_to_gakubu.csv                   0.0
+6        positive_insei.csv                   NaN
+2025-01-07 09:31:22,334 [INFO] Using fingerprint directory: /app/manager_fingerprint
+2025-01-07 09:31:22,335 [INFO] Scanning fingerprint directory: /app/manager_fingerprint
+2025-01-07 09:31:22,336 [INFO] Found room directory: 414
+2025-01-07 09:31:22,338 [INFO] Loaded negative sample file: /app/manager_fingerprint/414/ble_data_1736206055.csv
+2025-01-07 09:31:22,342 [INFO] Loaded negative sample file: /app/manager_fingerprint/414/wifi_data_1736206055.csv
+2025-01-07 09:31:22,342 [INFO] Found room directory: 513
+2025-01-07 09:31:22,343 [INFO] Loaded positive sample file: /app/manager_fingerprint/513/ble_data_1736206055.csv
+2025-01-07 09:31:22,347 [INFO] Loaded positive sample file: /app/manager_fingerprint/513/wifi_data_1736206055.csv
+2025-01-07 09:31:22,347 [INFO] Total samples loaded: 11760
+2025-01-07 09:31:22,347 [INFO] Total data points: 11760
+2025-01-07 09:31:22,348 [INFO] Number of negative samples: 5880
+2025-01-07 09:31:22,348 [INFO] Number of positive samples: 5880
+2025-01-07 09:31:22,348 [INFO] Data head:
+2025-01-07 09:31:22,348 [INFO]        timestamp                              identifier  rssi  label
+0  1731584814688   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -90      0
+1  1731584819208   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -91      0
+2  1731584820718   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -91      0
+3  1731584822279   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9   -100      0
+4  1731584833346   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -92      0
+2025-01-07 09:31:22,353 [INFO] Class distribution:
+label
+0    5880
+1    5880
+Name: count, dtype: int64
+2025-01-07 09:31:22,355 [INFO] Unique identifiers: 54
+2025-01-07 09:31:22,355 [INFO] Sample data points:
+2025-01-07 09:31:22,356 [INFO]            timestamp           identifier  rssi  label
+11386  1731584926760   c8:a6:08:9a:b7:01    -86      1
+4382   1731584904423   c0:25:a2:a7:2e:2a    -48      0
+1185   1731584840447   c0:25:a2:a7:2e:1a    -60      0
+5253   1731584921684   c8:a6:08:9a:b7:00    -87      0
+11731  1731584933857   c8:a6:08:9a:bc:14    -73      1
+2025-01-07 09:31:22,364 [INFO] Data types:
+timestamp      int64
+identifier    object
+rssi           int64
+label          int64
+dtype: object
+2025-01-07 09:31:22,366 [INFO] Missing values:
+timestamp     0
+identifier    0
+rssi          0
+label         0
+dtype: int64
+2025-01-07 09:31:22,366 [INFO] Unique timestamps: 130
+2025-01-07 09:31:22,457 [INFO] 
+Regression Evaluation Metrics:
+2025-01-07 09:31:22,458 [INFO] Mean Absolute Error (MAE): 0.00
+2025-01-07 09:31:22,461 [INFO] Mean Squared Error (MSE): 0.00
+2025-01-07 09:31:22,462 [INFO] R² Score: 1.00
+2025-01-07 09:31:27,434 [INFO] 
+Best Hyperparameters:
+2025-01-07 09:31:27,434 [INFO] {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-01-07 09:31:27,437 [INFO] 
+Regression Evaluation Metrics After Hyperparameter Tuning:
+2025-01-07 09:31:27,438 [INFO] Mean Absolute Error (MAE): 0.00
+2025-01-07 09:31:27,438 [INFO] Mean Squared Error (MSE): 0.00
+2025-01-07 09:31:27,438 [INFO] R² Score: 1.00
+2025-01-07 09:31:27,450 [INFO] 
+Model and scaler have been saved to the 'model' directory.
+2025-01-07 09:31:27,450 [INFO] 
+Pivot columns have been saved to the 'model' directory.
+2025-01-07 09:31:27,451 [INFO] Processing judgement file: /app/judgement/negative_rouka.csv
+2025-01-07 09:31:27,458 [INFO] File: /app/judgement/negative_rouka.csv - Predicted Percentage: 0.00%
+2025-01-07 09:31:27,458 [INFO] Processing judgement file: /app/judgement/insei_to_gakubu_kabe.csv
+2025-01-07 09:31:27,468 [INFO] File: /app/judgement/insei_to_gakubu_kabe.csv - Predicted Percentage: 0.00%
+2025-01-07 09:31:27,468 [INFO] Processing judgement file: /app/judgement/rouka_to_insei.csv
+2025-01-07 09:31:27,475 [INFO] File: /app/judgement/rouka_to_insei.csv - Predicted Percentage: 0.00%
+2025-01-07 09:31:27,475 [INFO] Processing judgement file: /app/judgement/gakubu_to_insei_kabe.csv
+2025-01-07 09:31:27,484 [INFO] File: /app/judgement/gakubu_to_insei_kabe.csv - Predicted Percentage: 0.00%
+2025-01-07 09:31:27,484 [INFO] Processing judgement file: /app/judgement/positive_gakubu.csv
+2025-01-07 09:31:27,491 [INFO] File: /app/judgement/positive_gakubu.csv - Predicted Percentage: 0.00%
+2025-01-07 09:31:27,491 [INFO] Processing judgement file: /app/judgement/rouka_to_gakubu.csv
+2025-01-07 09:31:27,500 [INFO] File: /app/judgement/rouka_to_gakubu.csv - Predicted Percentage: 0.00%
+2025-01-07 09:31:27,500 [INFO] Processing judgement file: /app/judgement/positive_insei.csv
+2025-01-07 09:31:27,502 [ERROR] Error processing file /app/judgement/positive_insei.csv: Found array with 0 sample(s) (shape=(0, 54)) while a minimum of 1 is required by StandardScaler.
+2025-01-07 09:31:27,504 [INFO] 
+Judgement results saved to 'model/judgement_results.csv'
+2025-01-07 09:31:27,504 [INFO]                    filename  predicted_percentage
+0        negative_rouka.csv                   0.0
+1  insei_to_gakubu_kabe.csv                   0.0
+2        rouka_to_insei.csv                   0.0
+3  gakubu_to_insei_kabe.csv                   0.0
+4       positive_gakubu.csv                   0.0
+5       rouka_to_gakubu.csv                   0.0
+6        positive_insei.csv                   NaN
+2025-01-23 05:57:13,680 [INFO] Using fingerprint directory: /app/manager_fingerprint
+2025-01-23 05:57:13,681 [INFO] Scanning fingerprint directory: /app/manager_fingerprint
+2025-01-23 05:57:13,682 [INFO] Found room directory: 414
+2025-01-23 05:57:13,689 [INFO] Loaded negative sample file: /app/manager_fingerprint/414/ble_data_1736206055.csv
+2025-01-23 05:57:13,697 [INFO] Loaded negative sample file: /app/manager_fingerprint/414/wifi_data_1736206055.csv
+2025-01-23 05:57:13,697 [INFO] Found room directory: 513
+2025-01-23 05:57:13,703 [INFO] Loaded positive sample file: /app/manager_fingerprint/513/ble_data_1736206055.csv
+2025-01-23 05:57:13,710 [INFO] Loaded positive sample file: /app/manager_fingerprint/513/wifi_data_1736206055.csv
+2025-01-23 05:57:13,711 [INFO] Total samples loaded: 11760
+2025-01-23 05:57:13,711 [INFO] Total data points: 11760
+2025-01-23 05:57:13,711 [INFO] Number of negative samples: 5880
+2025-01-23 05:57:13,711 [INFO] Number of positive samples: 5880
+2025-01-23 05:57:13,712 [INFO] Data head:
+2025-01-23 05:57:13,712 [INFO]        timestamp                              identifier  rssi  label
+0  1731584814688   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -90      0
+1  1731584819208   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -91      0
+2  1731584820718   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -91      0
+3  1731584822279   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9   -100      0
+4  1731584833346   E7D61EA3-F8DD-49C8-8F2F-F2484C07ACB9    -92      0
+2025-01-23 05:57:13,718 [INFO] Class distribution:
+label
+0    5880
+1    5880
+Name: count, dtype: int64
+2025-01-23 05:57:13,719 [INFO] Unique identifiers: 54
+2025-01-23 05:57:13,719 [INFO] Sample data points:
+2025-01-23 05:57:13,722 [INFO]           timestamp           identifier  rssi  label
+3262  1731584882076   c8:a6:08:9a:b7:01    -86      0
+9672  1731584893243   c8:a6:08:9a:fe:74    -90      1
+8575  1731584870910   60:84:bd:de:7c:67    -64      1
+1630  1731584849587   c8:a6:08:9a:b7:01    -86      0
+6646  1731584832329   74:03:bd:8b:7c:b7    -87      1
+2025-01-23 05:57:13,728 [INFO] Data types:
+timestamp      int64
+identifier    object
+rssi           int64
+label          int64
+dtype: object
+2025-01-23 05:57:13,730 [INFO] Missing values:
+timestamp     0
+identifier    0
+rssi          0
+label         0
+dtype: int64
+2025-01-23 05:57:13,730 [INFO] Unique timestamps: 130
+2025-01-23 05:57:13,797 [INFO] 
+Regression Evaluation Metrics:
+2025-01-23 05:57:13,799 [INFO] Mean Absolute Error (MAE): 0.00
+2025-01-23 05:57:13,799 [INFO] Mean Squared Error (MSE): 0.00
+2025-01-23 05:57:13,799 [INFO] R² Score: 1.00
+2025-01-23 05:57:20,007 [INFO] 
+Best Hyperparameters:
+2025-01-23 05:57:20,007 [INFO] {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-01-23 05:57:20,015 [INFO] 
+Regression Evaluation Metrics After Hyperparameter Tuning:
+2025-01-23 05:57:20,015 [INFO] Mean Absolute Error (MAE): 0.00
+2025-01-23 05:57:20,015 [INFO] Mean Squared Error (MSE): 0.00
+2025-01-23 05:57:20,016 [INFO] R² Score: 1.00
+2025-01-23 05:57:20,062 [INFO] 
+Model and scaler have been saved to the 'model' directory.
+2025-01-23 05:57:20,084 [INFO] 
+Pivot columns have been saved to the 'model' directory.
+2025-01-23 05:57:20,097 [INFO] Processing judgement file: /app/judgement/negative_rouka.csv
+2025-01-23 05:57:20,113 [INFO] File: /app/judgement/negative_rouka.csv - Predicted Percentage: 0.00%
+2025-01-23 05:57:20,117 [INFO] Processing judgement file: /app/judgement/insei_to_gakubu_kabe.csv
+2025-01-23 05:57:20,146 [INFO] File: /app/judgement/insei_to_gakubu_kabe.csv - Predicted Percentage: 0.00%
+2025-01-23 05:57:20,147 [INFO] Processing judgement file: /app/judgement/rouka_to_insei.csv
+2025-01-23 05:57:20,156 [INFO] File: /app/judgement/rouka_to_insei.csv - Predicted Percentage: 0.00%
+2025-01-23 05:57:20,156 [INFO] Processing judgement file: /app/judgement/gakubu_to_insei_kabe.csv
+2025-01-23 05:57:20,165 [INFO] File: /app/judgement/gakubu_to_insei_kabe.csv - Predicted Percentage: 0.00%
+2025-01-23 05:57:20,165 [INFO] Processing judgement file: /app/judgement/positive_gakubu.csv
+2025-01-23 05:57:20,176 [INFO] File: /app/judgement/positive_gakubu.csv - Predicted Percentage: 0.00%
+2025-01-23 05:57:20,177 [INFO] Processing judgement file: /app/judgement/rouka_to_gakubu.csv
+2025-01-23 05:57:20,197 [INFO] File: /app/judgement/rouka_to_gakubu.csv - Predicted Percentage: 0.00%
+2025-01-23 05:57:20,198 [INFO] Processing judgement file: /app/judgement/positive_insei.csv
+2025-01-23 05:57:20,204 [ERROR] Error processing file /app/judgement/positive_insei.csv: Found array with 0 sample(s) (shape=(0, 54)) while a minimum of 1 is required by StandardScaler.
+2025-01-23 05:57:20,216 [INFO] 
+Judgement results saved to 'model/judgement_results.csv'
+2025-01-23 05:57:20,216 [INFO]                    filename  predicted_percentage
+0        negative_rouka.csv                   0.0
+1  insei_to_gakubu_kabe.csv                   0.0
+2        rouka_to_insei.csv                   0.0
+3  gakubu_to_insei_kabe.csv                   0.0
+4       positive_gakubu.csv                   0.0
+5       rouka_to_gakubu.csv                   0.0
+6        positive_insei.csv                   NaN
+2025-01-23 23:20:52,961 [INFO] Using fingerprint directory: /app/manager_fingerprint
+2025-01-23 23:20:52,962 [INFO] Scanning fingerprint directory: /app/manager_fingerprint
+2025-01-23 23:20:52,965 [INFO] Found room directory: 0
+2025-01-23 23:20:52,971 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086119.csv
+2025-01-23 23:20:52,976 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085988.csv
+2025-01-23 23:20:52,978 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086887.csv
+2025-01-23 23:20:52,982 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737087172.csv
+2025-01-23 23:20:52,986 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085804.csv
+2025-01-23 23:20:52,987 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085839.csv
+2025-01-23 23:20:52,988 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086061.csv
+2025-01-23 23:20:52,996 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086097.csv
+2025-01-23 23:20:52,997 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085950.csv
+2025-01-23 23:20:53,001 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086900.csv
+2025-01-23 23:20:53,007 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086026.csv
+2025-01-23 23:20:53,008 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085874.csv
+2025-01-23 23:20:53,012 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085916.csv
+2025-01-23 23:20:53,026 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085916.csv
+2025-01-23 23:20:53,036 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085874.csv
+2025-01-23 23:20:53,040 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086026.csv
+2025-01-23 23:20:53,044 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086887.csv
+2025-01-23 23:20:53,057 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737087172.csv
+2025-01-23 23:20:53,064 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085988.csv
+2025-01-23 23:20:53,072 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086119.csv
+2025-01-23 23:20:53,075 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086900.csv
+2025-01-23 23:20:53,084 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085950.csv
+2025-01-23 23:20:53,092 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086097.csv
+2025-01-23 23:20:53,096 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085839.csv
+2025-01-23 23:20:53,103 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086061.csv
+2025-01-23 23:20:53,113 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085804.csv
+2025-01-23 23:20:53,118 [INFO] Found room directory: 514
+2025-01-23 23:20:53,122 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085570.csv
+2025-01-23 23:20:53,128 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086871.csv
+2025-01-23 23:20:53,129 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085395.csv
+2025-01-23 23:20:53,131 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085228.csv
+2025-01-23 23:20:53,135 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085189.csv
+2025-01-23 23:20:53,136 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085006.csv
+2025-01-23 23:20:53,141 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084866.csv
+2025-01-23 23:20:53,142 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086644.csv
+2025-01-23 23:20:53,143 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084906.csv
+2025-01-23 23:20:53,144 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085344.csv
+2025-01-23 23:20:53,148 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086684.csv
+2025-01-23 23:20:53,149 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085123.csv
+2025-01-23 23:20:53,150 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085484.csv
+2025-01-23 23:20:53,151 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084960.csv
+2025-01-23 23:20:53,161 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085673.csv
+2025-01-23 23:20:53,165 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085085.csv
+2025-01-23 23:20:53,171 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086785.csv
+2025-01-23 23:20:53,173 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085528.csv
+2025-01-23 23:20:53,183 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085047.csv
+2025-01-23 23:20:53,193 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086828.csv
+2025-01-23 23:20:53,200 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085305.csv
+2025-01-23 23:20:53,209 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086803.csv
+2025-01-23 23:20:53,210 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085673.csv
+2025-01-23 23:20:53,220 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084960.csv
+2025-01-23 23:20:53,225 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085484.csv
+2025-01-23 23:20:53,228 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085123.csv
+2025-01-23 23:20:53,230 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086803.csv
+2025-01-23 23:20:53,233 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085305.csv
+2025-01-23 23:20:53,239 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085528.csv
+2025-01-23 23:20:53,241 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086828.csv
+2025-01-23 23:20:53,246 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085047.csv
+2025-01-23 23:20:53,247 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085085.csv
+2025-01-23 23:20:53,249 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086785.csv
+2025-01-23 23:20:53,252 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085228.csv
+2025-01-23 23:20:53,253 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085189.csv
+2025-01-23 23:20:53,261 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085395.csv
+2025-01-23 23:20:53,270 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086871.csv
+2025-01-23 23:20:53,275 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085570.csv
+2025-01-23 23:20:53,277 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086684.csv
+2025-01-23 23:20:53,278 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085344.csv
+2025-01-23 23:20:53,287 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084866.csv
+2025-01-23 23:20:53,292 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084906.csv
+2025-01-23 23:20:53,299 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086644.csv
+2025-01-23 23:20:53,306 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085006.csv
+2025-01-23 23:20:53,320 [INFO] Total samples loaded: 59080
+2025-01-23 23:20:53,321 [INFO] Total data points: 59080
+2025-01-23 23:20:53,323 [INFO] Number of negative samples: 24247
+2025-01-23 23:20:53,325 [INFO] Number of positive samples: 34833
+2025-01-23 23:20:53,325 [INFO] Data head:
+2025-01-23 23:20:53,325 [INFO]        timestamp           identifier rssi  label
+0  1737086109993   c8:a6:08:9a:fe:71   -48      0
+1  1737086109993   74:03:bd:ef:8a:00   -44      0
+2  1737086109993   c8:a6:08:9a:fe:70   -48      0
+3  1737086109993   d2:c0:bf:1d:b5:64   -80      0
+4  1737086109993   e8:4f:25:d3:72:73   -90      0
+2025-01-23 23:20:53,335 [INFO] Class distribution:
+label
+1    34833
+0    24247
+Name: count, dtype: int64
+2025-01-23 23:20:53,337 [INFO] Unique identifiers: 190
+2025-01-23 23:20:53,337 [INFO] Sample data points:
+2025-01-23 23:20:53,338 [INFO]            timestamp           identifier rssi  label
+47689  1737086796881   c8:a6:08:9a:bb:81   -75      1
+16852  1737085974308   c8:a6:08:9a:bc:11   -76      0
+2507   1737086072498   c8:a6:08:9a:fc:94   -81      0
+17888  1737085985431   c8:a6:08:5b:16:24   -54      0
+31264  1737085177219   c8:a6:08:9b:16:00   -56      1
+2025-01-23 23:20:53,348 [INFO] Data types:
+timestamp     object
+identifier    object
+rssi          object
+label          int64
+dtype: object
+2025-01-23 23:20:53,363 [INFO] Missing values:
+timestamp     0
+identifier    0
+rssi          0
+label         0
+dtype: int64
+2025-01-23 23:20:53,374 [INFO] Unique timestamps: 1203
+2025-01-23 23:20:53,710 [INFO] 
+Regression Evaluation Metrics:
+2025-01-23 23:20:53,718 [INFO] Mean Absolute Error (MAE): 5.87
+2025-01-23 23:20:53,720 [INFO] Mean Squared Error (MSE): 406.99
+2025-01-23 23:20:53,729 [INFO] R² Score: 0.82
+2025-01-23 23:21:05,541 [INFO] 
+Best Hyperparameters:
+2025-01-23 23:21:05,541 [INFO] {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-01-23 23:21:05,546 [INFO] 
+Regression Evaluation Metrics After Hyperparameter Tuning:
+2025-01-23 23:21:05,546 [INFO] Mean Absolute Error (MAE): 5.87
+2025-01-23 23:21:05,546 [INFO] Mean Squared Error (MSE): 406.99
+2025-01-23 23:21:05,546 [INFO] R² Score: 0.82
+2025-01-23 23:21:05,575 [INFO] 
+Model and scaler have been saved to the 'model' directory.
+2025-01-23 23:21:05,576 [INFO] 
+Pivot columns have been saved to the 'model' directory.
+2025-01-23 23:21:05,577 [INFO] Processing judgement file: /app/judgement/negative_rouka.csv
+2025-01-23 23:21:05,584 [INFO] File: /app/judgement/negative_rouka.csv - Predicted Percentage: 23.00%
+2025-01-23 23:21:05,585 [INFO] Processing judgement file: /app/judgement/insei_to_gakubu_kabe.csv
+2025-01-23 23:21:05,594 [INFO] File: /app/judgement/insei_to_gakubu_kabe.csv - Predicted Percentage: 43.15%
+2025-01-23 23:21:05,594 [INFO] Processing judgement file: /app/judgement/rouka_to_insei.csv
+2025-01-23 23:21:05,601 [INFO] File: /app/judgement/rouka_to_insei.csv - Predicted Percentage: 8.44%
+2025-01-23 23:21:05,601 [INFO] Processing judgement file: /app/judgement/gakubu_to_insei_kabe.csv
+2025-01-23 23:21:05,610 [INFO] File: /app/judgement/gakubu_to_insei_kabe.csv - Predicted Percentage: 74.81%
+2025-01-23 23:21:05,611 [INFO] Processing judgement file: /app/judgement/positive_gakubu.csv
+2025-01-23 23:21:05,617 [INFO] File: /app/judgement/positive_gakubu.csv - Predicted Percentage: 85.19%
+2025-01-23 23:21:05,617 [INFO] Processing judgement file: /app/judgement/rouka_to_gakubu.csv
+2025-01-23 23:21:05,627 [INFO] File: /app/judgement/rouka_to_gakubu.csv - Predicted Percentage: 46.11%
+2025-01-23 23:21:05,627 [INFO] Processing judgement file: /app/judgement/positive_insei.csv
+2025-01-23 23:21:05,629 [ERROR] Error processing file /app/judgement/positive_insei.csv: Found array with 0 sample(s) (shape=(0, 190)) while a minimum of 1 is required by StandardScaler.
+2025-01-23 23:21:05,632 [INFO] 
+Judgement results saved to 'model/judgement_results.csv'
+2025-01-23 23:21:05,632 [INFO]                    filename  predicted_percentage
+0        negative_rouka.csv             23.000000
+1  insei_to_gakubu_kabe.csv             43.153387
+2        rouka_to_insei.csv              8.437698
+3  gakubu_to_insei_kabe.csv             74.814122
+4       positive_gakubu.csv             85.188312
+5       rouka_to_gakubu.csv             46.107035
+6        positive_insei.csv                   NaN
+2025-01-24 00:06:42,568 [INFO] Using fingerprint directory: /app/manager_fingerprint
+2025-01-24 00:06:42,568 [INFO] Scanning fingerprint directory: /app/manager_fingerprint
+2025-01-24 00:06:42,570 [INFO] Found room directory: 0
+2025-01-24 00:06:42,578 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086119.csv
+2025-01-24 00:06:42,580 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085988.csv
+2025-01-24 00:06:42,582 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086887.csv
+2025-01-24 00:06:42,584 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737087172.csv
+2025-01-24 00:06:42,586 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085804.csv
+2025-01-24 00:06:42,590 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085839.csv
+2025-01-24 00:06:42,591 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086061.csv
+2025-01-24 00:06:42,595 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086097.csv
+2025-01-24 00:06:42,598 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085950.csv
+2025-01-24 00:06:42,601 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086900.csv
+2025-01-24 00:06:42,605 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086026.csv
+2025-01-24 00:06:42,610 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085874.csv
+2025-01-24 00:06:42,612 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085916.csv
+2025-01-24 00:06:42,615 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085916.csv
+2025-01-24 00:06:42,618 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085874.csv
+2025-01-24 00:06:42,620 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086026.csv
+2025-01-24 00:06:42,624 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086887.csv
+2025-01-24 00:06:42,626 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737087172.csv
+2025-01-24 00:06:42,631 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085988.csv
+2025-01-24 00:06:42,634 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086119.csv
+2025-01-24 00:06:42,636 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086900.csv
+2025-01-24 00:06:42,639 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085950.csv
+2025-01-24 00:06:42,645 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086097.csv
+2025-01-24 00:06:42,647 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085839.csv
+2025-01-24 00:06:42,649 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086061.csv
+2025-01-24 00:06:42,653 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085804.csv
+2025-01-24 00:06:42,654 [INFO] Found room directory: 514
+2025-01-24 00:06:42,663 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085570.csv
+2025-01-24 00:06:42,665 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086871.csv
+2025-01-24 00:06:42,667 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085395.csv
+2025-01-24 00:06:42,669 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085228.csv
+2025-01-24 00:06:42,671 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085189.csv
+2025-01-24 00:06:42,674 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085006.csv
+2025-01-24 00:06:42,679 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084866.csv
+2025-01-24 00:06:42,681 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086644.csv
+2025-01-24 00:06:42,683 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084906.csv
+2025-01-24 00:06:42,684 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085344.csv
+2025-01-24 00:06:42,686 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086684.csv
+2025-01-24 00:06:42,687 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085123.csv
+2025-01-24 00:06:42,688 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085484.csv
+2025-01-24 00:06:42,690 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084960.csv
+2025-01-24 00:06:42,692 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085673.csv
+2025-01-24 00:06:42,694 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085085.csv
+2025-01-24 00:06:42,703 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086785.csv
+2025-01-24 00:06:42,713 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085528.csv
+2025-01-24 00:06:42,718 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085047.csv
+2025-01-24 00:06:42,721 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086828.csv
+2025-01-24 00:06:42,724 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085305.csv
+2025-01-24 00:06:42,727 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086803.csv
+2025-01-24 00:06:42,730 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085673.csv
+2025-01-24 00:06:42,739 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084960.csv
+2025-01-24 00:06:42,746 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085484.csv
+2025-01-24 00:06:42,757 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085123.csv
+2025-01-24 00:06:42,761 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086803.csv
+2025-01-24 00:06:42,764 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085305.csv
+2025-01-24 00:06:42,767 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085528.csv
+2025-01-24 00:06:42,769 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086828.csv
+2025-01-24 00:06:42,772 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085047.csv
+2025-01-24 00:06:42,775 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085085.csv
+2025-01-24 00:06:42,778 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086785.csv
+2025-01-24 00:06:42,780 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085228.csv
+2025-01-24 00:06:42,781 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085189.csv
+2025-01-24 00:06:42,785 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085395.csv
+2025-01-24 00:06:42,789 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086871.csv
+2025-01-24 00:06:42,791 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085570.csv
+2025-01-24 00:06:42,794 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086684.csv
+2025-01-24 00:06:42,798 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085344.csv
+2025-01-24 00:06:42,807 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084866.csv
+2025-01-24 00:06:42,816 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084906.csv
+2025-01-24 00:06:42,825 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086644.csv
+2025-01-24 00:06:42,829 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085006.csv
+2025-01-24 00:06:42,841 [INFO] Total samples loaded: 59080
+2025-01-24 00:06:42,842 [INFO] Total data points: 59080
+2025-01-24 00:06:42,843 [INFO] Number of negative samples: 24247
+2025-01-24 00:06:42,844 [INFO] Number of positive samples: 34833
+2025-01-24 00:06:42,845 [INFO] Data head:
+2025-01-24 00:06:42,845 [INFO]        timestamp           identifier rssi  label
+0  1737086109993   c8:a6:08:9a:fe:71   -48      0
+1  1737086109993   74:03:bd:ef:8a:00   -44      0
+2  1737086109993   c8:a6:08:9a:fe:70   -48      0
+3  1737086109993   d2:c0:bf:1d:b5:64   -80      0
+4  1737086109993   e8:4f:25:d3:72:73   -90      0
+2025-01-24 00:06:42,854 [INFO] Class distribution:
+label
+1    34833
+0    24247
+Name: count, dtype: int64
+2025-01-24 00:06:42,861 [INFO] Unique identifiers: 190
+2025-01-24 00:06:42,862 [INFO] Sample data points:
+2025-01-24 00:06:42,869 [INFO]            timestamp           identifier rssi  label
+28713  1737085205427   c8:a6:08:9a:fd:00   -89      1
+43964  1737085514115   c8:a6:08:9a:bb:b0   -86      1
+4444   1737086091657   c8:a6:08:9a:fc:91   -80      0
+44906  1737085527229   c8:a6:08:9a:bb:80   -73      1
+55253  1737085080946   c8:a6:08:9b:16:20   -39      1
+2025-01-24 00:06:42,875 [INFO] Data types:
+timestamp     object
+identifier    object
+rssi          object
+label          int64
+dtype: object
+2025-01-24 00:06:42,884 [INFO] Missing values:
+timestamp     0
+identifier    0
+rssi          0
+label         0
+dtype: int64
+2025-01-24 00:06:42,887 [INFO] Unique timestamps: 1203
+2025-01-24 00:06:43,268 [INFO] 
+Regression Evaluation Metrics:
+2025-01-24 00:06:43,271 [INFO] Mean Absolute Error (MAE): 5.87
+2025-01-24 00:06:43,273 [INFO] Mean Squared Error (MSE): 406.99
+2025-01-24 00:06:43,273 [INFO] R² Score: 0.82
+2025-01-24 00:06:59,502 [INFO] 
+Best Hyperparameters:
+2025-01-24 00:06:59,502 [INFO] {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-01-24 00:06:59,508 [INFO] 
+Regression Evaluation Metrics After Hyperparameter Tuning:
+2025-01-24 00:06:59,508 [INFO] Mean Absolute Error (MAE): 5.87
+2025-01-24 00:06:59,508 [INFO] Mean Squared Error (MSE): 406.99
+2025-01-24 00:06:59,508 [INFO] R² Score: 0.82
+2025-01-24 00:06:59,546 [INFO] 
+Model and scaler have been saved to the 'model' directory.
+2025-01-24 00:06:59,547 [INFO] 
+Pivot columns have been saved to the 'model' directory.
+2025-01-24 00:06:59,548 [INFO] Processing judgement file: /app/judgement/model2_rouka.csv
+2025-01-24 00:06:59,556 [INFO] File: /app/judgement/model2_rouka.csv - Predicted Percentage: 5.47%
+2025-01-24 00:06:59,556 [INFO] Processing judgement file: /app/judgement/model2_gakubukabe.csv
+2025-01-24 00:06:59,563 [INFO] File: /app/judgement/model2_gakubukabe.csv - Predicted Percentage: 51.37%
+2025-01-24 00:06:59,563 [INFO] Processing judgement file: /app/judgement/model2_roukakabe.csv
+2025-01-24 00:06:59,571 [INFO] File: /app/judgement/model2_roukakabe.csv - Predicted Percentage: 47.34%
+2025-01-24 00:06:59,571 [INFO] Processing judgement file: /app/judgement/model2_insei.csv
+2025-01-24 00:06:59,577 [INFO] File: /app/judgement/model2_insei.csv - Predicted Percentage: 86.59%
+2025-01-24 00:06:59,578 [INFO] Processing judgement file: /app/judgement/model2_inselkabe.csv
+2025-01-24 00:06:59,584 [INFO] File: /app/judgement/model2_inselkabe.csv - Predicted Percentage: 52.31%
+2025-01-24 00:06:59,584 [INFO] Processing judgement file: /app/judgement/model2_gakubu.csv
+2025-01-24 00:06:59,590 [INFO] File: /app/judgement/model2_gakubu.csv - Predicted Percentage: 96.31%
+2025-01-24 00:06:59,593 [INFO] 
+Judgement results saved to 'model/judgement_results.csv'
+2025-01-24 00:06:59,593 [INFO]                 filename  predicted_percentage
+0       model2_rouka.csv              5.470119
+1  model2_gakubukabe.csv             51.368421
+2   model2_roukakabe.csv             47.337594
+3       model2_insei.csv             86.594696
+4   model2_inselkabe.csv             52.308904
+5      model2_gakubu.csv             96.306287
+2025-01-24 00:07:53,153 [INFO] Using fingerprint directory: /app/manager_fingerprint
+2025-01-24 00:07:53,154 [INFO] Scanning fingerprint directory: /app/manager_fingerprint
+2025-01-24 00:07:53,160 [INFO] Found room directory: 0
+2025-01-24 00:07:53,164 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086119.csv
+2025-01-24 00:07:53,166 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085988.csv
+2025-01-24 00:07:53,172 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086887.csv
+2025-01-24 00:07:53,174 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737087172.csv
+2025-01-24 00:07:53,175 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085804.csv
+2025-01-24 00:07:53,175 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085839.csv
+2025-01-24 00:07:53,176 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086061.csv
+2025-01-24 00:07:53,179 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086097.csv
+2025-01-24 00:07:53,180 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085950.csv
+2025-01-24 00:07:53,182 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086900.csv
+2025-01-24 00:07:53,184 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086026.csv
+2025-01-24 00:07:53,186 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085874.csv
+2025-01-24 00:07:53,187 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085916.csv
+2025-01-24 00:07:53,189 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085916.csv
+2025-01-24 00:07:53,191 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085874.csv
+2025-01-24 00:07:53,192 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086026.csv
+2025-01-24 00:07:53,193 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086887.csv
+2025-01-24 00:07:53,194 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737087172.csv
+2025-01-24 00:07:53,197 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085988.csv
+2025-01-24 00:07:53,199 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086119.csv
+2025-01-24 00:07:53,200 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086900.csv
+2025-01-24 00:07:53,202 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085950.csv
+2025-01-24 00:07:53,203 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086097.csv
+2025-01-24 00:07:53,205 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085839.csv
+2025-01-24 00:07:53,207 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086061.csv
+2025-01-24 00:07:53,209 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085804.csv
+2025-01-24 00:07:53,209 [INFO] Found room directory: 514
+2025-01-24 00:07:53,212 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085570.csv
+2025-01-24 00:07:53,214 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086871.csv
+2025-01-24 00:07:53,215 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085395.csv
+2025-01-24 00:07:53,220 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085228.csv
+2025-01-24 00:07:53,222 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085189.csv
+2025-01-24 00:07:53,223 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085006.csv
+2025-01-24 00:07:53,225 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084866.csv
+2025-01-24 00:07:53,226 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086644.csv
+2025-01-24 00:07:53,228 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084906.csv
+2025-01-24 00:07:53,230 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085344.csv
+2025-01-24 00:07:53,231 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086684.csv
+2025-01-24 00:07:53,232 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085123.csv
+2025-01-24 00:07:53,233 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085484.csv
+2025-01-24 00:07:53,235 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084960.csv
+2025-01-24 00:07:53,236 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085673.csv
+2025-01-24 00:07:53,237 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085085.csv
+2025-01-24 00:07:53,239 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086785.csv
+2025-01-24 00:07:53,241 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085528.csv
+2025-01-24 00:07:53,242 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085047.csv
+2025-01-24 00:07:53,243 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086828.csv
+2025-01-24 00:07:53,245 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085305.csv
+2025-01-24 00:07:53,253 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086803.csv
+2025-01-24 00:07:53,258 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085673.csv
+2025-01-24 00:07:53,266 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084960.csv
+2025-01-24 00:07:53,269 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085484.csv
+2025-01-24 00:07:53,272 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085123.csv
+2025-01-24 00:07:53,273 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086803.csv
+2025-01-24 00:07:53,274 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085305.csv
+2025-01-24 00:07:53,276 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085528.csv
+2025-01-24 00:07:53,277 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086828.csv
+2025-01-24 00:07:53,279 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085047.csv
+2025-01-24 00:07:53,280 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085085.csv
+2025-01-24 00:07:53,282 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086785.csv
+2025-01-24 00:07:53,283 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085228.csv
+2025-01-24 00:07:53,284 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085189.csv
+2025-01-24 00:07:53,286 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085395.csv
+2025-01-24 00:07:53,288 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086871.csv
+2025-01-24 00:07:53,290 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085570.csv
+2025-01-24 00:07:53,291 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086684.csv
+2025-01-24 00:07:53,292 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085344.csv
+2025-01-24 00:07:53,294 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084866.csv
+2025-01-24 00:07:53,295 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084906.csv
+2025-01-24 00:07:53,296 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086644.csv
+2025-01-24 00:07:53,297 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085006.csv
+2025-01-24 00:07:53,301 [INFO] Total samples loaded: 59080
+2025-01-24 00:07:53,302 [INFO] Total data points: 59080
+2025-01-24 00:07:53,302 [INFO] Number of negative samples: 24247
+2025-01-24 00:07:53,302 [INFO] Number of positive samples: 34833
+2025-01-24 00:07:53,303 [INFO] Data head:
+2025-01-24 00:07:53,303 [INFO]        timestamp           identifier rssi  label
+0  1737086109993   c8:a6:08:9a:fe:71   -48      0
+1  1737086109993   74:03:bd:ef:8a:00   -44      0
+2  1737086109993   c8:a6:08:9a:fe:70   -48      0
+3  1737086109993   d2:c0:bf:1d:b5:64   -80      0
+4  1737086109993   e8:4f:25:d3:72:73   -90      0
+2025-01-24 00:07:53,307 [INFO] Class distribution:
+label
+1    34833
+0    24247
+Name: count, dtype: int64
+2025-01-24 00:07:53,309 [INFO] Unique identifiers: 190
+2025-01-24 00:07:53,309 [INFO] Sample data points:
+2025-01-24 00:07:53,310 [INFO]            timestamp           identifier rssi  label
+46722  1737085292012   c8:a6:08:5a:bb:81   -72      1
+51701  1737085116942   3c:64:cf:5c:de:09   -81      1
+24457  1737085541381   c8:a6:08:5b:16:21   -56      1
+47045  1737085297052   c8:a6:08:5b:16:01   -53      1
+12156  1737085903110   c8:a6:08:9b:15:54   -68      0
+2025-01-24 00:07:53,313 [INFO] Data types:
+timestamp     object
+identifier    object
+rssi          object
+label          int64
+dtype: object
+2025-01-24 00:07:53,318 [INFO] Missing values:
+timestamp     0
+identifier    0
+rssi          0
+label         0
+dtype: int64
+2025-01-24 00:07:53,319 [INFO] Unique timestamps: 1203
+2025-01-24 00:07:53,569 [INFO] 
+Regression Evaluation Metrics:
+2025-01-24 00:07:53,569 [INFO] Mean Absolute Error (MAE): 5.87
+2025-01-24 00:07:53,570 [INFO] Mean Squared Error (MSE): 406.99
+2025-01-24 00:07:53,570 [INFO] R² Score: 0.82
+2025-01-24 00:08:07,267 [INFO] 
+Best Hyperparameters:
+2025-01-24 00:08:07,267 [INFO] {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-01-24 00:08:07,276 [INFO] 
+Regression Evaluation Metrics After Hyperparameter Tuning:
+2025-01-24 00:08:07,277 [INFO] Mean Absolute Error (MAE): 5.87
+2025-01-24 00:08:07,277 [INFO] Mean Squared Error (MSE): 406.99
+2025-01-24 00:08:07,277 [INFO] R² Score: 0.82
+2025-01-24 00:08:07,387 [INFO] 
+Model and scaler have been saved to the 'model' directory.
+2025-01-24 00:08:07,390 [INFO] 
+Pivot columns have been saved to the 'model' directory.
+2025-01-24 00:08:07,391 [INFO] Processing judgement file: /app/judgement/model2_rouka.csv
+2025-01-24 00:08:07,403 [INFO] File: /app/judgement/model2_rouka.csv - Predicted Percentage: 5.47%
+2025-01-24 00:08:07,403 [INFO] Processing judgement file: /app/judgement/model2_gakubukabe.csv
+2025-01-24 00:08:07,423 [INFO] File: /app/judgement/model2_gakubukabe.csv - Predicted Percentage: 51.37%
+2025-01-24 00:08:07,424 [INFO] Processing judgement file: /app/judgement/model2_roukakabe.csv
+2025-01-24 00:08:07,435 [INFO] File: /app/judgement/model2_roukakabe.csv - Predicted Percentage: 47.34%
+2025-01-24 00:08:07,435 [INFO] Processing judgement file: /app/judgement/model2_insei.csv
+2025-01-24 00:08:07,444 [INFO] File: /app/judgement/model2_insei.csv - Predicted Percentage: 86.59%
+2025-01-24 00:08:07,445 [INFO] Processing judgement file: /app/judgement/model2_inselkabe.csv
+2025-01-24 00:08:07,457 [INFO] File: /app/judgement/model2_inselkabe.csv - Predicted Percentage: 52.31%
+2025-01-24 00:08:07,458 [INFO] Processing judgement file: /app/judgement/model2_gakubu.csv
+2025-01-24 00:08:07,477 [INFO] File: /app/judgement/model2_gakubu.csv - Predicted Percentage: 96.31%
+2025-01-24 00:08:07,484 [INFO] 
+Judgement results saved to 'model/judgement_results.csv'
+2025-01-24 00:08:07,485 [INFO]                 filename  predicted_percentage
+0       model2_rouka.csv              5.470119
+1  model2_gakubukabe.csv             51.368421
+2   model2_roukakabe.csv             47.337594
+3       model2_insei.csv             86.594696
+4   model2_inselkabe.csv             52.308904
+5      model2_gakubu.csv             96.306287
+2025-01-24 00:13:07,656 [INFO] Using fingerprint directory: /app/manager_fingerprint
+2025-01-24 00:13:07,657 [INFO] Scanning fingerprint directory: /app/manager_fingerprint
+2025-01-24 00:13:07,657 [INFO] Found room directory: 0
+2025-01-24 00:13:07,660 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086119.csv
+2025-01-24 00:13:07,661 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085988.csv
+2025-01-24 00:13:07,662 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086887.csv
+2025-01-24 00:13:07,663 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737087172.csv
+2025-01-24 00:13:07,664 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085804.csv
+2025-01-24 00:13:07,665 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085839.csv
+2025-01-24 00:13:07,666 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086061.csv
+2025-01-24 00:13:07,668 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086097.csv
+2025-01-24 00:13:07,670 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085950.csv
+2025-01-24 00:13:07,671 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086900.csv
+2025-01-24 00:13:07,673 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086026.csv
+2025-01-24 00:13:07,674 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085874.csv
+2025-01-24 00:13:07,675 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085916.csv
+2025-01-24 00:13:07,677 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085916.csv
+2025-01-24 00:13:07,678 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085874.csv
+2025-01-24 00:13:07,679 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086026.csv
+2025-01-24 00:13:07,681 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086887.csv
+2025-01-24 00:13:07,682 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737087172.csv
+2025-01-24 00:13:07,683 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085988.csv
+2025-01-24 00:13:07,684 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086119.csv
+2025-01-24 00:13:07,685 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086900.csv
+2025-01-24 00:13:07,686 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085950.csv
+2025-01-24 00:13:07,687 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086097.csv
+2025-01-24 00:13:07,688 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085839.csv
+2025-01-24 00:13:07,690 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086061.csv
+2025-01-24 00:13:07,692 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085804.csv
+2025-01-24 00:13:07,692 [INFO] Found room directory: 514
+2025-01-24 00:13:07,694 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085570.csv
+2025-01-24 00:13:07,696 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086871.csv
+2025-01-24 00:13:07,697 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085395.csv
+2025-01-24 00:13:07,698 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085228.csv
+2025-01-24 00:13:07,700 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085189.csv
+2025-01-24 00:13:07,701 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085006.csv
+2025-01-24 00:13:07,703 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084866.csv
+2025-01-24 00:13:07,704 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086644.csv
+2025-01-24 00:13:07,705 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084906.csv
+2025-01-24 00:13:07,706 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085344.csv
+2025-01-24 00:13:07,708 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086684.csv
+2025-01-24 00:13:07,708 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085123.csv
+2025-01-24 00:13:07,709 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085484.csv
+2025-01-24 00:13:07,711 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084960.csv
+2025-01-24 00:13:07,712 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085673.csv
+2025-01-24 00:13:07,713 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085085.csv
+2025-01-24 00:13:07,715 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086785.csv
+2025-01-24 00:13:07,716 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085528.csv
+2025-01-24 00:13:07,717 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085047.csv
+2025-01-24 00:13:07,718 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086828.csv
+2025-01-24 00:13:07,719 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085305.csv
+2025-01-24 00:13:07,720 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086803.csv
+2025-01-24 00:13:07,721 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085673.csv
+2025-01-24 00:13:07,722 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084960.csv
+2025-01-24 00:13:07,724 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085484.csv
+2025-01-24 00:13:07,726 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085123.csv
+2025-01-24 00:13:07,727 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086803.csv
+2025-01-24 00:13:07,727 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085305.csv
+2025-01-24 00:13:07,728 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085528.csv
+2025-01-24 00:13:07,729 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086828.csv
+2025-01-24 00:13:07,731 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085047.csv
+2025-01-24 00:13:07,732 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085085.csv
+2025-01-24 00:13:07,733 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086785.csv
+2025-01-24 00:13:07,734 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085228.csv
+2025-01-24 00:13:07,735 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085189.csv
+2025-01-24 00:13:07,736 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085395.csv
+2025-01-24 00:13:07,737 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086871.csv
+2025-01-24 00:13:07,738 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085570.csv
+2025-01-24 00:13:07,739 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086684.csv
+2025-01-24 00:13:07,741 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085344.csv
+2025-01-24 00:13:07,742 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084866.csv
+2025-01-24 00:13:07,743 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084906.csv
+2025-01-24 00:13:07,744 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086644.csv
+2025-01-24 00:13:07,745 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085006.csv
+2025-01-24 00:13:07,750 [INFO] Total samples loaded: 59080
+2025-01-24 00:13:07,750 [INFO] Total data points: 59080
+2025-01-24 00:13:07,751 [INFO] Number of negative samples: 24247
+2025-01-24 00:13:07,751 [INFO] Number of positive samples: 34833
+2025-01-24 00:13:07,751 [INFO] Data head:
+2025-01-24 00:13:07,751 [INFO]        timestamp           identifier rssi  label
+0  1737086109993   c8:a6:08:9a:fe:71   -48      0
+1  1737086109993   74:03:bd:ef:8a:00   -44      0
+2  1737086109993   c8:a6:08:9a:fe:70   -48      0
+3  1737086109993   d2:c0:bf:1d:b5:64   -80      0
+4  1737086109993   e8:4f:25:d3:72:73   -90      0
+2025-01-24 00:13:07,755 [INFO] Class distribution:
+label
+1    34833
+0    24247
+Name: count, dtype: int64
+2025-01-24 00:13:07,757 [INFO] Unique identifiers: 190
+2025-01-24 00:13:07,757 [INFO] Sample data points:
+2025-01-24 00:13:07,758 [INFO]            timestamp           identifier rssi  label
+20266  1737086035232   c8:a6:08:9a:fd:04   -85      0
+47288  1737085300086   c8:a6:08:5a:bc:14   -59      1
+27328  1737086854855   c8:a6:08:9a:fe:71   -80      1
+42191  1737086775417   60:84:bd:de:7c:60   -54      1
+24626  1737085544416   d2:c0:bf:1d:b5:64   -86      1
+2025-01-24 00:13:07,761 [INFO] Data types:
+timestamp     object
+identifier    object
+rssi          object
+label          int64
+dtype: object
+2025-01-24 00:13:07,765 [INFO] Missing values:
+timestamp     0
+identifier    0
+rssi          0
+label         0
+dtype: int64
+2025-01-24 00:13:07,767 [INFO] Unique timestamps: 1203
+2025-01-24 00:13:07,991 [INFO] 
+Regression Evaluation Metrics:
+2025-01-24 00:13:07,992 [INFO] Mean Absolute Error (MAE): 5.87
+2025-01-24 00:13:07,992 [INFO] Mean Squared Error (MSE): 406.99
+2025-01-24 00:13:07,992 [INFO] R² Score: 0.82
+2025-01-24 00:13:15,640 [INFO] 
+Best Hyperparameters:
+2025-01-24 00:13:15,641 [INFO] {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-01-24 00:13:15,645 [INFO] 
+Regression Evaluation Metrics After Hyperparameter Tuning:
+2025-01-24 00:13:15,645 [INFO] Mean Absolute Error (MAE): 5.87
+2025-01-24 00:13:15,645 [INFO] Mean Squared Error (MSE): 406.99
+2025-01-24 00:13:15,646 [INFO] R² Score: 0.82
+2025-01-24 00:13:15,672 [INFO] 
+Model and scaler have been saved to the 'model' directory.
+2025-01-24 00:13:15,673 [INFO] 
+Pivot columns have been saved to the 'model' directory.
+2025-01-24 00:13:15,674 [INFO] Processing judgement file: /app/judgement/model2_rouka.csv
+2025-01-24 00:13:15,682 [INFO] File: /app/judgement/model2_rouka.csv - Predicted Percentage: 5.47%
+2025-01-24 00:13:15,682 [INFO] Processing judgement file: /app/judgement/model2_gakubukabe.csv
+2025-01-24 00:13:15,689 [INFO] File: /app/judgement/model2_gakubukabe.csv - Predicted Percentage: 51.37%
+2025-01-24 00:13:15,689 [INFO] Processing judgement file: /app/judgement/model2_roukakabe.csv
+2025-01-24 00:13:15,695 [INFO] File: /app/judgement/model2_roukakabe.csv - Predicted Percentage: 47.34%
+2025-01-24 00:13:15,695 [INFO] Processing judgement file: /app/judgement/model2_insei.csv
+2025-01-24 00:13:15,702 [INFO] File: /app/judgement/model2_insei.csv - Predicted Percentage: 83.08%
+2025-01-24 00:13:15,702 [INFO] Processing judgement file: /app/judgement/model2_inselkabe.csv
+2025-01-24 00:13:15,708 [INFO] File: /app/judgement/model2_inselkabe.csv - Predicted Percentage: 52.31%
+2025-01-24 00:13:15,708 [INFO] Processing judgement file: /app/judgement/model2_gakubu.csv
+2025-01-24 00:13:15,714 [INFO] File: /app/judgement/model2_gakubu.csv - Predicted Percentage: 96.31%
+2025-01-24 00:13:15,716 [INFO] 
+Judgement results saved to 'model/judgement_results.csv'
+2025-01-24 00:13:15,716 [INFO]                 filename  predicted_percentage
+0       model2_rouka.csv              5.470119
+1  model2_gakubukabe.csv             51.368421
+2   model2_roukakabe.csv             47.337594
+3       model2_insei.csv             83.084546
+4   model2_inselkabe.csv             52.308904
+5      model2_gakubu.csv             96.306287
+2025-01-24 00:13:57,690 [INFO] Using fingerprint directory: /app/manager_fingerprint
+2025-01-24 00:13:57,690 [INFO] Scanning fingerprint directory: /app/manager_fingerprint
+2025-01-24 00:13:57,691 [INFO] Found room directory: 0
+2025-01-24 00:13:57,693 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086119.csv
+2025-01-24 00:13:57,694 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085988.csv
+2025-01-24 00:13:57,695 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086887.csv
+2025-01-24 00:13:57,697 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737087172.csv
+2025-01-24 00:13:57,698 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085804.csv
+2025-01-24 00:13:57,699 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085839.csv
+2025-01-24 00:13:57,700 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086061.csv
+2025-01-24 00:13:57,702 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086097.csv
+2025-01-24 00:13:57,703 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085950.csv
+2025-01-24 00:13:57,705 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086900.csv
+2025-01-24 00:13:57,707 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086026.csv
+2025-01-24 00:13:57,708 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085874.csv
+2025-01-24 00:13:57,709 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085916.csv
+2025-01-24 00:13:57,711 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085916.csv
+2025-01-24 00:13:57,712 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085874.csv
+2025-01-24 00:13:57,713 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086026.csv
+2025-01-24 00:13:57,714 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086887.csv
+2025-01-24 00:13:57,715 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737087172.csv
+2025-01-24 00:13:57,717 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085988.csv
+2025-01-24 00:13:57,718 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086119.csv
+2025-01-24 00:13:57,719 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086900.csv
+2025-01-24 00:13:57,720 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085950.csv
+2025-01-24 00:13:57,721 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086097.csv
+2025-01-24 00:13:57,722 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085839.csv
+2025-01-24 00:13:57,724 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086061.csv
+2025-01-24 00:13:57,726 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085804.csv
+2025-01-24 00:13:57,726 [INFO] Found room directory: 514
+2025-01-24 00:13:57,728 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085570.csv
+2025-01-24 00:13:57,729 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086871.csv
+2025-01-24 00:13:57,730 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085395.csv
+2025-01-24 00:13:57,732 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085228.csv
+2025-01-24 00:13:57,733 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085189.csv
+2025-01-24 00:13:57,735 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085006.csv
+2025-01-24 00:13:57,736 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084866.csv
+2025-01-24 00:13:57,737 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086644.csv
+2025-01-24 00:13:57,739 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084906.csv
+2025-01-24 00:13:57,740 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085344.csv
+2025-01-24 00:13:57,741 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086684.csv
+2025-01-24 00:13:57,742 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085123.csv
+2025-01-24 00:13:57,743 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085484.csv
+2025-01-24 00:13:57,744 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084960.csv
+2025-01-24 00:13:57,746 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085673.csv
+2025-01-24 00:13:57,747 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085085.csv
+2025-01-24 00:13:57,748 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086785.csv
+2025-01-24 00:13:57,749 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085528.csv
+2025-01-24 00:13:57,750 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085047.csv
+2025-01-24 00:13:57,751 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086828.csv
+2025-01-24 00:13:57,753 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085305.csv
+2025-01-24 00:13:57,754 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086803.csv
+2025-01-24 00:13:57,755 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085673.csv
+2025-01-24 00:13:57,756 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084960.csv
+2025-01-24 00:13:57,757 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085484.csv
+2025-01-24 00:13:57,759 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085123.csv
+2025-01-24 00:13:57,760 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086803.csv
+2025-01-24 00:13:57,761 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085305.csv
+2025-01-24 00:13:57,762 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085528.csv
+2025-01-24 00:13:57,763 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086828.csv
+2025-01-24 00:13:57,764 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085047.csv
+2025-01-24 00:13:57,766 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085085.csv
+2025-01-24 00:13:57,767 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086785.csv
+2025-01-24 00:13:57,768 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085228.csv
+2025-01-24 00:13:57,768 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085189.csv
+2025-01-24 00:13:57,770 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085395.csv
+2025-01-24 00:13:57,771 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086871.csv
+2025-01-24 00:13:57,772 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085570.csv
+2025-01-24 00:13:57,773 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086684.csv
+2025-01-24 00:13:57,774 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085344.csv
+2025-01-24 00:13:57,775 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084866.csv
+2025-01-24 00:13:57,776 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084906.csv
+2025-01-24 00:13:57,777 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086644.csv
+2025-01-24 00:13:57,778 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085006.csv
+2025-01-24 00:13:57,783 [INFO] Total samples loaded: 59080
+2025-01-24 00:13:57,783 [INFO] Total data points: 59080
+2025-01-24 00:13:57,784 [INFO] Number of negative samples: 24247
+2025-01-24 00:13:57,784 [INFO] Number of positive samples: 34833
+2025-01-24 00:13:57,784 [INFO] Data head:
+2025-01-24 00:13:57,785 [INFO]        timestamp           identifier rssi  label
+0  1737086109993   c8:a6:08:9a:fe:71   -48      0
+1  1737086109993   74:03:bd:ef:8a:00   -44      0
+2  1737086109993   c8:a6:08:9a:fe:70   -48      0
+3  1737086109993   d2:c0:bf:1d:b5:64   -80      0
+4  1737086109993   e8:4f:25:d3:72:73   -90      0
+2025-01-24 00:13:57,789 [INFO] Class distribution:
+label
+1    34833
+0    24247
+Name: count, dtype: int64
+2025-01-24 00:13:57,791 [INFO] Unique identifiers: 190
+2025-01-24 00:13:57,791 [INFO] Sample data points:
+2025-01-24 00:13:57,792 [INFO]            timestamp           identifier rssi  label
+9253   1737086009297   c8:a6:08:9a:bf:30   -86      0
+22210  1737086056439   c8:a6:08:5a:fc:90   -76      0
+39216  1737084960007   c8:a6:08:5a:bb:c0   -75      1
+56144  1737085376027   c8:a6:08:5b:15:50   -76      1
+45710  1737085276816   c8:a6:08:9a:fe:70   -81      1
+2025-01-24 00:13:57,795 [INFO] Data types:
+timestamp     object
+identifier    object
+rssi          object
+label          int64
+dtype: object
+2025-01-24 00:13:57,799 [INFO] Missing values:
+timestamp     0
+identifier    0
+rssi          0
+label         0
+dtype: int64
+2025-01-24 00:13:57,801 [INFO] Unique timestamps: 1203
+2025-01-24 00:13:58,026 [INFO] 
+Regression Evaluation Metrics:
+2025-01-24 00:13:58,026 [INFO] Mean Absolute Error (MAE): 5.87
+2025-01-24 00:13:58,026 [INFO] Mean Squared Error (MSE): 406.99
+2025-01-24 00:13:58,026 [INFO] R² Score: 0.82
+2025-01-24 00:14:05,945 [INFO] 
+Best Hyperparameters:
+2025-01-24 00:14:05,945 [INFO] {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-01-24 00:14:05,950 [INFO] 
+Regression Evaluation Metrics After Hyperparameter Tuning:
+2025-01-24 00:14:05,950 [INFO] Mean Absolute Error (MAE): 5.87
+2025-01-24 00:14:05,950 [INFO] Mean Squared Error (MSE): 406.99
+2025-01-24 00:14:05,950 [INFO] R² Score: 0.82
+2025-01-24 00:14:05,977 [INFO] 
+Model and scaler have been saved to the 'model' directory.
+2025-01-24 00:14:05,978 [INFO] 
+Pivot columns have been saved to the 'model' directory.
+2025-01-24 00:14:05,979 [INFO] Processing judgement file: /app/judgement/model2_rouka.csv
+2025-01-24 00:14:05,987 [INFO] File: /app/judgement/model2_rouka.csv - Predicted Percentage: 5.47%
+2025-01-24 00:14:05,987 [INFO] Processing judgement file: /app/judgement/model2_gakubukabe.csv
+2025-01-24 00:14:05,994 [INFO] File: /app/judgement/model2_gakubukabe.csv - Predicted Percentage: 51.37%
+2025-01-24 00:14:05,994 [INFO] Processing judgement file: /app/judgement/model2_roukakabe.csv
+2025-01-24 00:14:06,001 [INFO] File: /app/judgement/model2_roukakabe.csv - Predicted Percentage: 47.34%
+2025-01-24 00:14:06,002 [INFO] Processing judgement file: /app/judgement/model2_insei.csv
+2025-01-24 00:14:06,009 [INFO] File: /app/judgement/model2_insei.csv - Predicted Percentage: 83.08%
+2025-01-24 00:14:06,010 [INFO] Processing judgement file: /app/judgement/model2_inselkabe.csv
+2025-01-24 00:14:06,016 [INFO] File: /app/judgement/model2_inselkabe.csv - Predicted Percentage: 52.31%
+2025-01-24 00:14:06,016 [INFO] Processing judgement file: /app/judgement/model2_gakubu.csv
+2025-01-24 00:14:06,023 [INFO] File: /app/judgement/model2_gakubu.csv - Predicted Percentage: 96.31%
+2025-01-24 00:14:06,025 [INFO] 
+Judgement results saved to 'model/judgement_results.csv'
+2025-01-24 00:14:06,025 [INFO]                 filename  predicted_percentage
+0       model2_rouka.csv              5.470119
+1  model2_gakubukabe.csv             51.368421
+2   model2_roukakabe.csv             47.337594
+3       model2_insei.csv             83.084546
+4   model2_inselkabe.csv             52.308904
+5      model2_gakubu.csv             96.306287
+2025-01-24 00:14:43,282 [INFO] Using fingerprint directory: /app/manager_fingerprint
+2025-01-24 00:14:43,283 [INFO] Scanning fingerprint directory: /app/manager_fingerprint
+2025-01-24 00:14:43,283 [INFO] Found room directory: 0
+2025-01-24 00:14:43,286 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086119.csv
+2025-01-24 00:14:43,287 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085988.csv
+2025-01-24 00:14:43,288 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086887.csv
+2025-01-24 00:14:43,289 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737087172.csv
+2025-01-24 00:14:43,291 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085804.csv
+2025-01-24 00:14:43,292 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085839.csv
+2025-01-24 00:14:43,293 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086061.csv
+2025-01-24 00:14:43,295 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086097.csv
+2025-01-24 00:14:43,296 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085950.csv
+2025-01-24 00:14:43,297 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086900.csv
+2025-01-24 00:14:43,299 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086026.csv
+2025-01-24 00:14:43,300 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085874.csv
+2025-01-24 00:14:43,301 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085916.csv
+2025-01-24 00:14:43,303 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085916.csv
+2025-01-24 00:14:43,305 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085874.csv
+2025-01-24 00:14:43,306 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086026.csv
+2025-01-24 00:14:43,307 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086887.csv
+2025-01-24 00:14:43,308 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737087172.csv
+2025-01-24 00:14:43,310 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085988.csv
+2025-01-24 00:14:43,311 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086119.csv
+2025-01-24 00:14:43,312 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086900.csv
+2025-01-24 00:14:43,314 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085950.csv
+2025-01-24 00:14:43,315 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086097.csv
+2025-01-24 00:14:43,317 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085839.csv
+2025-01-24 00:14:43,319 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086061.csv
+2025-01-24 00:14:43,321 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085804.csv
+2025-01-24 00:14:43,321 [INFO] Found room directory: 514
+2025-01-24 00:14:43,323 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085570.csv
+2025-01-24 00:14:43,325 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086871.csv
+2025-01-24 00:14:43,326 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085395.csv
+2025-01-24 00:14:43,328 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085228.csv
+2025-01-24 00:14:43,329 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085189.csv
+2025-01-24 00:14:43,331 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085006.csv
+2025-01-24 00:14:43,333 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084866.csv
+2025-01-24 00:14:43,334 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086644.csv
+2025-01-24 00:14:43,335 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084906.csv
+2025-01-24 00:14:43,336 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085344.csv
+2025-01-24 00:14:43,337 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086684.csv
+2025-01-24 00:14:43,338 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085123.csv
+2025-01-24 00:14:43,339 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085484.csv
+2025-01-24 00:14:43,341 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084960.csv
+2025-01-24 00:14:43,342 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085673.csv
+2025-01-24 00:14:43,344 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085085.csv
+2025-01-24 00:14:43,345 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086785.csv
+2025-01-24 00:14:43,347 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085528.csv
+2025-01-24 00:14:43,348 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085047.csv
+2025-01-24 00:14:43,349 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086828.csv
+2025-01-24 00:14:43,351 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085305.csv
+2025-01-24 00:14:43,352 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086803.csv
+2025-01-24 00:14:43,353 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085673.csv
+2025-01-24 00:14:43,354 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084960.csv
+2025-01-24 00:14:43,355 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085484.csv
+2025-01-24 00:14:43,357 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085123.csv
+2025-01-24 00:14:43,358 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086803.csv
+2025-01-24 00:14:43,358 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085305.csv
+2025-01-24 00:14:43,359 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085528.csv
+2025-01-24 00:14:43,360 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086828.csv
+2025-01-24 00:14:43,362 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085047.csv
+2025-01-24 00:14:43,363 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085085.csv
+2025-01-24 00:14:43,364 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086785.csv
+2025-01-24 00:14:43,365 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085228.csv
+2025-01-24 00:14:43,366 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085189.csv
+2025-01-24 00:14:43,367 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085395.csv
+2025-01-24 00:14:43,368 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086871.csv
+2025-01-24 00:14:43,369 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085570.csv
+2025-01-24 00:14:43,370 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086684.csv
+2025-01-24 00:14:43,371 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085344.csv
+2025-01-24 00:14:43,372 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084866.csv
+2025-01-24 00:14:43,373 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084906.csv
+2025-01-24 00:14:43,374 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086644.csv
+2025-01-24 00:14:43,375 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085006.csv
+2025-01-24 00:14:43,380 [INFO] Total samples loaded: 59080
+2025-01-24 00:14:43,380 [INFO] Total data points: 59080
+2025-01-24 00:14:43,381 [INFO] Number of negative samples: 24247
+2025-01-24 00:14:43,381 [INFO] Number of positive samples: 34833
+2025-01-24 00:14:43,381 [INFO] Data head:
+2025-01-24 00:14:43,381 [INFO]        timestamp           identifier rssi  label
+0  1737086109993   c8:a6:08:9a:fe:71   -48      0
+1  1737086109993   74:03:bd:ef:8a:00   -44      0
+2  1737086109993   c8:a6:08:9a:fe:70   -48      0
+3  1737086109993   d2:c0:bf:1d:b5:64   -80      0
+4  1737086109993   e8:4f:25:d3:72:73   -90      0
+2025-01-24 00:14:43,385 [INFO] Class distribution:
+label
+1    34833
+0    24247
+Name: count, dtype: int64
+2025-01-24 00:14:43,387 [INFO] Unique identifiers: 190
+2025-01-24 00:14:43,388 [INFO] Sample data points:
+2025-01-24 00:14:43,389 [INFO]            timestamp           identifier rssi  label
+38084  1737084937935   c8:a6:08:9a:fe:71   -82      1
+52760  1737085028103   c8:a6:08:9b:15:50   -80      1
+52704  1737085027111   c0:25:a2:a7:2e:26   -65      1
+47346  1737085301098   c8:a6:08:9b:16:20   -48      1
+12944  1737085845411   c8:a6:08:5b:16:04   -49      0
+2025-01-24 00:14:43,391 [INFO] Data types:
+timestamp     object
+identifier    object
+rssi          object
+label          int64
+dtype: object
+2025-01-24 00:14:43,395 [INFO] Missing values:
+timestamp     0
+identifier    0
+rssi          0
+label         0
+dtype: int64
+2025-01-24 00:14:43,397 [INFO] Unique timestamps: 1203
+2025-01-24 00:14:43,623 [INFO] 
+Regression Evaluation Metrics:
+2025-01-24 00:14:43,623 [INFO] Mean Absolute Error (MAE): 5.87
+2025-01-24 00:14:43,623 [INFO] Mean Squared Error (MSE): 406.99
+2025-01-24 00:14:43,624 [INFO] R² Score: 0.82
+2025-01-24 00:14:51,488 [INFO] 
+Best Hyperparameters:
+2025-01-24 00:14:51,489 [INFO] {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-01-24 00:14:51,497 [INFO] 
+Regression Evaluation Metrics After Hyperparameter Tuning:
+2025-01-24 00:14:51,498 [INFO] Mean Absolute Error (MAE): 5.87
+2025-01-24 00:14:51,498 [INFO] Mean Squared Error (MSE): 406.99
+2025-01-24 00:14:51,498 [INFO] R² Score: 0.82
+2025-01-24 00:14:51,528 [INFO] 
+Model and scaler have been saved to the 'model' directory.
+2025-01-24 00:14:51,529 [INFO] 
+Pivot columns have been saved to the 'model' directory.
+2025-01-24 00:14:51,530 [INFO] Processing judgement file: /app/judgement/model2_rouka.csv
+2025-01-24 00:14:51,538 [INFO] File: /app/judgement/model2_rouka.csv - Predicted Percentage: 5.47%
+2025-01-24 00:14:51,538 [INFO] Processing judgement file: /app/judgement/model2_gakubukabe.csv
+2025-01-24 00:14:51,545 [INFO] File: /app/judgement/model2_gakubukabe.csv - Predicted Percentage: 51.37%
+2025-01-24 00:14:51,545 [INFO] Processing judgement file: /app/judgement/model2_roukakabe.csv
+2025-01-24 00:14:51,551 [INFO] File: /app/judgement/model2_roukakabe.csv - Predicted Percentage: 47.34%
+2025-01-24 00:14:51,551 [INFO] Processing judgement file: /app/judgement/model2_insei.csv
+2025-01-24 00:14:51,558 [INFO] File: /app/judgement/model2_insei.csv - Predicted Percentage: 30.00%
+2025-01-24 00:14:51,558 [INFO] Processing judgement file: /app/judgement/model2_inselkabe.csv
+2025-01-24 00:14:51,564 [INFO] File: /app/judgement/model2_inselkabe.csv - Predicted Percentage: 52.31%
+2025-01-24 00:14:51,564 [INFO] Processing judgement file: /app/judgement/model2_gakubu.csv
+2025-01-24 00:14:51,570 [INFO] File: /app/judgement/model2_gakubu.csv - Predicted Percentage: 96.31%
+2025-01-24 00:14:51,573 [INFO] 
+Judgement results saved to 'model/judgement_results.csv'
+2025-01-24 00:14:51,573 [INFO]                 filename  predicted_percentage
+0       model2_rouka.csv              5.470119
+1  model2_gakubukabe.csv             51.368421
+2   model2_roukakabe.csv             47.337594
+3       model2_insei.csv             29.999328
+4   model2_inselkabe.csv             52.308904
+5      model2_gakubu.csv             96.306287
+2025-01-24 00:32:07,900 [INFO] Using fingerprint directory: /app/manager_fingerprint
+2025-01-24 00:32:07,900 [INFO] Scanning fingerprint directory: /app/manager_fingerprint
+2025-01-24 00:32:07,901 [INFO] Found room directory: 0
+2025-01-24 00:32:07,906 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086119.csv
+2025-01-24 00:32:07,907 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085988.csv
+2025-01-24 00:32:07,911 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086887.csv
+2025-01-24 00:32:07,913 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737087172.csv
+2025-01-24 00:32:07,914 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085804.csv
+2025-01-24 00:32:07,914 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085839.csv
+2025-01-24 00:32:07,915 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086061.csv
+2025-01-24 00:32:07,917 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086097.csv
+2025-01-24 00:32:07,921 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085950.csv
+2025-01-24 00:32:07,926 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086900.csv
+2025-01-24 00:32:07,928 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086026.csv
+2025-01-24 00:32:07,930 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085874.csv
+2025-01-24 00:32:07,931 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085916.csv
+2025-01-24 00:32:07,932 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085916.csv
+2025-01-24 00:32:07,934 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085874.csv
+2025-01-24 00:32:07,935 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086026.csv
+2025-01-24 00:32:07,936 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086887.csv
+2025-01-24 00:32:07,937 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737087172.csv
+2025-01-24 00:32:07,941 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085988.csv
+2025-01-24 00:32:07,942 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086119.csv
+2025-01-24 00:32:07,944 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086900.csv
+2025-01-24 00:32:07,945 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085950.csv
+2025-01-24 00:32:07,952 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086097.csv
+2025-01-24 00:32:07,953 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085839.csv
+2025-01-24 00:32:07,956 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086061.csv
+2025-01-24 00:32:07,958 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085804.csv
+2025-01-24 00:32:07,958 [INFO] Found room directory: 514
+2025-01-24 00:32:07,961 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085570.csv
+2025-01-24 00:32:07,965 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086871.csv
+2025-01-24 00:32:07,971 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085395.csv
+2025-01-24 00:32:07,972 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085228.csv
+2025-01-24 00:32:07,974 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085189.csv
+2025-01-24 00:32:07,975 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085006.csv
+2025-01-24 00:32:07,977 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084866.csv
+2025-01-24 00:32:07,978 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086644.csv
+2025-01-24 00:32:07,980 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084906.csv
+2025-01-24 00:32:07,983 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085344.csv
+2025-01-24 00:32:07,984 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086684.csv
+2025-01-24 00:32:07,985 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085123.csv
+2025-01-24 00:32:07,987 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085484.csv
+2025-01-24 00:32:07,988 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084960.csv
+2025-01-24 00:32:07,990 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085673.csv
+2025-01-24 00:32:07,991 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085085.csv
+2025-01-24 00:32:07,992 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086785.csv
+2025-01-24 00:32:07,994 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085528.csv
+2025-01-24 00:32:07,995 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085047.csv
+2025-01-24 00:32:07,996 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086828.csv
+2025-01-24 00:32:07,998 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085305.csv
+2025-01-24 00:32:07,999 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086803.csv
+2025-01-24 00:32:08,000 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085673.csv
+2025-01-24 00:32:08,001 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084960.csv
+2025-01-24 00:32:08,003 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085484.csv
+2025-01-24 00:32:08,005 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085123.csv
+2025-01-24 00:32:08,007 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086803.csv
+2025-01-24 00:32:08,008 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085305.csv
+2025-01-24 00:32:08,009 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085528.csv
+2025-01-24 00:32:08,011 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086828.csv
+2025-01-24 00:32:08,012 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085047.csv
+2025-01-24 00:32:08,014 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085085.csv
+2025-01-24 00:32:08,015 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086785.csv
+2025-01-24 00:32:08,016 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085228.csv
+2025-01-24 00:32:08,017 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085189.csv
+2025-01-24 00:32:08,019 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085395.csv
+2025-01-24 00:32:08,020 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086871.csv
+2025-01-24 00:32:08,021 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085570.csv
+2025-01-24 00:32:08,022 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086684.csv
+2025-01-24 00:32:08,023 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085344.csv
+2025-01-24 00:32:08,025 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084866.csv
+2025-01-24 00:32:08,026 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084906.csv
+2025-01-24 00:32:08,027 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086644.csv
+2025-01-24 00:32:08,028 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085006.csv
+2025-01-24 00:32:08,035 [INFO] Total samples loaded: 59080
+2025-01-24 00:32:08,035 [INFO] Total data points: 59080
+2025-01-24 00:32:08,035 [INFO] Number of negative samples: 24247
+2025-01-24 00:32:08,036 [INFO] Number of positive samples: 34833
+2025-01-24 00:32:08,036 [INFO] Data head:
+2025-01-24 00:32:08,036 [INFO]        timestamp           identifier rssi  label
+0  1737086109993   c8:a6:08:9a:fe:71   -48      0
+1  1737086109993   74:03:bd:ef:8a:00   -44      0
+2  1737086109993   c8:a6:08:9a:fe:70   -48      0
+3  1737086109993   d2:c0:bf:1d:b5:64   -80      0
+4  1737086109993   e8:4f:25:d3:72:73   -90      0
+2025-01-24 00:32:08,041 [INFO] Class distribution:
+label
+1    34833
+0    24247
+Name: count, dtype: int64
+2025-01-24 00:32:08,044 [INFO] Unique identifiers: 190
+2025-01-24 00:32:08,044 [INFO] Sample data points:
+2025-01-24 00:32:08,045 [INFO]            timestamp           identifier rssi  label
+46973  1737085296045   c8:a6:08:5a:bb:c1   -75      1
+56409  1737085381066   c8:a6:08:9a:bb:c0   -73      1
+41368  1737086761260   c8:a6:08:9a:bc:11   -65      1
+58111  1737085328417   c8:a6:08:9a:bb:c4   -73      1
+46190  1737085283942   c8:a6:08:5b:16:00   -54      1
+2025-01-24 00:32:08,048 [INFO] Data types:
+timestamp     object
+identifier    object
+rssi          object
+label          int64
+dtype: object
+2025-01-24 00:32:08,052 [INFO] Missing values:
+timestamp     0
+identifier    0
+rssi          0
+label         0
+dtype: int64
+2025-01-24 00:32:08,054 [INFO] Unique timestamps: 1203
+2025-01-24 00:32:08,308 [INFO] 
+Regression Evaluation Metrics:
+2025-01-24 00:32:08,308 [INFO] Mean Absolute Error (MAE): 5.87
+2025-01-24 00:32:08,308 [INFO] Mean Squared Error (MSE): 406.99
+2025-01-24 00:32:08,308 [INFO] R² Score: 0.82
+2025-01-24 00:32:22,843 [INFO] 
+Best Hyperparameters:
+2025-01-24 00:32:22,843 [INFO] {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-01-24 00:32:22,847 [INFO] 
+Regression Evaluation Metrics After Hyperparameter Tuning:
+2025-01-24 00:32:22,848 [INFO] Mean Absolute Error (MAE): 5.87
+2025-01-24 00:32:22,848 [INFO] Mean Squared Error (MSE): 406.99
+2025-01-24 00:32:22,848 [INFO] R² Score: 0.82
+2025-01-24 00:32:22,874 [INFO] 
+Model and scaler have been saved to the 'model' directory.
+2025-01-24 00:32:22,875 [INFO] 
+Pivot columns have been saved to the 'model' directory.
+2025-01-24 00:32:22,876 [INFO] Processing judgement file: /app/judgement/model2_rouka.csv
+2025-01-24 00:32:22,883 [INFO] File: /app/judgement/model2_rouka.csv - Predicted Percentage: 5.47%
+2025-01-24 00:32:22,883 [INFO] Processing judgement file: /app/judgement/model2_gakubukabe.csv
+2025-01-24 00:32:22,890 [INFO] File: /app/judgement/model2_gakubukabe.csv - Predicted Percentage: 51.37%
+2025-01-24 00:32:22,890 [INFO] Processing judgement file: /app/judgement/model2_roukakabe.csv
+2025-01-24 00:32:22,897 [INFO] File: /app/judgement/model2_roukakabe.csv - Predicted Percentage: 47.34%
+2025-01-24 00:32:22,897 [INFO] Processing judgement file: /app/judgement/model2_insei.csv
+2025-01-24 00:32:22,903 [INFO] File: /app/judgement/model2_insei.csv - Predicted Percentage: 30.00%
+2025-01-24 00:32:22,903 [INFO] Processing judgement file: /app/judgement/model2_inselkabe.csv
+2025-01-24 00:32:22,909 [INFO] File: /app/judgement/model2_inselkabe.csv - Predicted Percentage: 52.31%
+2025-01-24 00:32:22,909 [INFO] Processing judgement file: /app/judgement/model2_gakubu.csv
+2025-01-24 00:32:22,915 [INFO] File: /app/judgement/model2_gakubu.csv - Predicted Percentage: 96.31%
+2025-01-24 00:32:22,917 [INFO] 
+Judgement results saved to 'model/judgement_results.csv'
+2025-01-24 00:32:22,917 [INFO]                 filename  predicted_percentage
+0       model2_rouka.csv              5.470119
+1  model2_gakubukabe.csv             51.368421
+2   model2_roukakabe.csv             47.337594
+3       model2_insei.csv             29.999328
+4   model2_inselkabe.csv             52.308904
+5      model2_gakubu.csv             96.306287
+2025-01-24 09:24:29,741 [INFO] Using fingerprint directory: /app/manager_fingerprint
+2025-01-24 09:24:29,742 [INFO] Scanning fingerprint directory: /app/manager_fingerprint
+2025-01-24 09:24:29,745 [INFO] Found room directory: 0
+2025-01-24 09:24:29,748 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086119.csv
+2025-01-24 09:24:29,749 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085988.csv
+2025-01-24 09:24:29,751 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086887.csv
+2025-01-24 09:24:29,752 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737087172.csv
+2025-01-24 09:24:29,754 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085804.csv
+2025-01-24 09:24:29,755 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085839.csv
+2025-01-24 09:24:29,756 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086061.csv
+2025-01-24 09:24:29,758 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086097.csv
+2025-01-24 09:24:29,760 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085950.csv
+2025-01-24 09:24:29,761 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086900.csv
+2025-01-24 09:24:29,764 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086026.csv
+2025-01-24 09:24:29,765 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085874.csv
+2025-01-24 09:24:29,766 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085916.csv
+2025-01-24 09:24:29,768 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085916.csv
+2025-01-24 09:24:29,770 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085874.csv
+2025-01-24 09:24:29,771 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086026.csv
+2025-01-24 09:24:29,772 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086887.csv
+2025-01-24 09:24:29,773 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737087172.csv
+2025-01-24 09:24:29,775 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085988.csv
+2025-01-24 09:24:29,776 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086119.csv
+2025-01-24 09:24:29,777 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086900.csv
+2025-01-24 09:24:29,778 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737085950.csv
+2025-01-24 09:24:29,780 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/ble_data_1737086097.csv
+2025-01-24 09:24:29,781 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085839.csv
+2025-01-24 09:24:29,784 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737086061.csv
+2025-01-24 09:24:29,785 [INFO] Loaded negative sample file: /app/manager_fingerprint/0/wifi_data_1737085804.csv
+2025-01-24 09:24:29,786 [INFO] Found room directory: 514
+2025-01-24 09:24:29,788 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085570.csv
+2025-01-24 09:24:29,790 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086871.csv
+2025-01-24 09:24:29,791 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085395.csv
+2025-01-24 09:24:29,793 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085228.csv
+2025-01-24 09:24:29,794 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085189.csv
+2025-01-24 09:24:29,796 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085006.csv
+2025-01-24 09:24:29,797 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084866.csv
+2025-01-24 09:24:29,799 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086644.csv
+2025-01-24 09:24:29,800 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084906.csv
+2025-01-24 09:24:29,802 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085344.csv
+2025-01-24 09:24:29,803 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086684.csv
+2025-01-24 09:24:29,804 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085123.csv
+2025-01-24 09:24:29,805 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085484.csv
+2025-01-24 09:24:29,807 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737084960.csv
+2025-01-24 09:24:29,808 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085673.csv
+2025-01-24 09:24:29,810 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085085.csv
+2025-01-24 09:24:29,812 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086785.csv
+2025-01-24 09:24:29,814 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085528.csv
+2025-01-24 09:24:29,815 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085047.csv
+2025-01-24 09:24:29,817 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086828.csv
+2025-01-24 09:24:29,818 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085305.csv
+2025-01-24 09:24:29,820 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737086803.csv
+2025-01-24 09:24:29,821 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085673.csv
+2025-01-24 09:24:29,822 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084960.csv
+2025-01-24 09:24:29,824 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085484.csv
+2025-01-24 09:24:29,826 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085123.csv
+2025-01-24 09:24:29,827 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086803.csv
+2025-01-24 09:24:29,828 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085305.csv
+2025-01-24 09:24:29,829 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085528.csv
+2025-01-24 09:24:29,830 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086828.csv
+2025-01-24 09:24:29,832 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085047.csv
+2025-01-24 09:24:29,833 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085085.csv
+2025-01-24 09:24:29,834 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086785.csv
+2025-01-24 09:24:29,836 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085228.csv
+2025-01-24 09:24:29,837 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085189.csv
+2025-01-24 09:24:29,839 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085395.csv
+2025-01-24 09:24:29,840 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086871.csv
+2025-01-24 09:24:29,841 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085570.csv
+2025-01-24 09:24:29,843 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086684.csv
+2025-01-24 09:24:29,844 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/wifi_data_1737085344.csv
+2025-01-24 09:24:29,846 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084866.csv
+2025-01-24 09:24:29,847 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737084906.csv
+2025-01-24 09:24:29,848 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737086644.csv
+2025-01-24 09:24:29,849 [INFO] Loaded positive sample file: /app/manager_fingerprint/514/ble_data_1737085006.csv
+2025-01-24 09:24:29,854 [INFO] Total samples loaded: 59080
+2025-01-24 09:24:29,854 [INFO] Total data points: 59080
+2025-01-24 09:24:29,855 [INFO] Number of negative samples: 24247
+2025-01-24 09:24:29,855 [INFO] Number of positive samples: 34833
+2025-01-24 09:24:29,855 [INFO] Data head:
+2025-01-24 09:24:29,856 [INFO]        timestamp           identifier rssi  label
+0  1737086109993   c8:a6:08:9a:fe:71   -48      0
+1  1737086109993   74:03:bd:ef:8a:00   -44      0
+2  1737086109993   c8:a6:08:9a:fe:70   -48      0
+3  1737086109993   d2:c0:bf:1d:b5:64   -80      0
+4  1737086109993   e8:4f:25:d3:72:73   -90      0
+2025-01-24 09:24:29,860 [INFO] Class distribution:
+label
+1    34833
+0    24247
+Name: count, dtype: int64
+2025-01-24 09:24:29,862 [INFO] Unique identifiers: 190
+2025-01-24 09:24:29,862 [INFO] Sample data points:
+2025-01-24 09:24:29,863 [INFO]            timestamp           identifier rssi  label
+37195  1737086678138   c8:a6:08:5b:16:04   -61      1
+50236  1737085092761   c8:a6:08:5b:16:00   -59      1
+32341  1737084980432   c8:a6:08:5a:bb:84   -84      1
+8147   1737085997167   c8:a6:08:9a:b7:64   -91      0
+11846  1737085899986   c8:a6:08:9a:bb:80   -74      0
+2025-01-24 09:24:29,866 [INFO] Data types:
+timestamp     object
+identifier    object
+rssi          object
+label          int64
+dtype: object
+2025-01-24 09:24:29,871 [INFO] Missing values:
+timestamp     0
+identifier    0
+rssi          0
+label         0
+dtype: int64
+2025-01-24 09:24:29,872 [INFO] Unique timestamps: 1203
+2025-01-24 09:24:30,120 [INFO] 
+Regression Evaluation Metrics:
+2025-01-24 09:24:30,125 [INFO] Mean Absolute Error (MAE): 5.87
+2025-01-24 09:24:30,127 [INFO] Mean Squared Error (MSE): 406.99
+2025-01-24 09:24:30,137 [INFO] R² Score: 0.82
+2025-01-24 09:24:44,012 [INFO] 
+Best Hyperparameters:
+2025-01-24 09:24:44,017 [INFO] {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-01-24 09:24:44,029 [INFO] 
+Regression Evaluation Metrics After Hyperparameter Tuning:
+2025-01-24 09:24:44,038 [INFO] Mean Absolute Error (MAE): 5.87
+2025-01-24 09:24:44,043 [INFO] Mean Squared Error (MSE): 406.99
+2025-01-24 09:24:44,047 [INFO] R² Score: 0.82
+2025-01-24 09:24:44,141 [INFO] 
+Model and scaler have been saved to the 'model' directory.
+2025-01-24 09:24:44,144 [INFO] 
+Pivot columns have been saved to the 'model' directory.
+2025-01-24 09:24:44,146 [INFO] Processing judgement file: /app/judgement/model2_rouka.csv
+2025-01-24 09:24:44,156 [INFO] File: /app/judgement/model2_rouka.csv - Predicted Percentage: 5.47%
+2025-01-24 09:24:44,157 [INFO] Processing judgement file: /app/judgement/model2_gakubukabe.csv
+2025-01-24 09:24:44,166 [INFO] File: /app/judgement/model2_gakubukabe.csv - Predicted Percentage: 51.37%
+2025-01-24 09:24:44,167 [INFO] Processing judgement file: /app/judgement/model2_roukakabe.csv
+2025-01-24 09:24:44,184 [INFO] File: /app/judgement/model2_roukakabe.csv - Predicted Percentage: 47.34%
+2025-01-24 09:24:44,186 [INFO] Processing judgement file: /app/judgement/model2_insei.csv
+2025-01-24 09:24:44,195 [INFO] File: /app/judgement/model2_insei.csv - Predicted Percentage: 30.00%
+2025-01-24 09:24:44,196 [INFO] Processing judgement file: /app/judgement/model2_inselkabe.csv
+2025-01-24 09:24:44,216 [INFO] File: /app/judgement/model2_inselkabe.csv - Predicted Percentage: 52.31%
+2025-01-24 09:24:44,221 [INFO] Processing judgement file: /app/judgement/model2_gakubu.csv
+2025-01-24 09:24:44,237 [INFO] File: /app/judgement/model2_gakubu.csv - Predicted Percentage: 96.31%
+2025-01-24 09:24:44,254 [INFO] 
+Judgement results saved to 'model/judgement_results.csv'
+2025-01-24 09:24:44,255 [INFO]                 filename  predicted_percentage
+0       model2_rouka.csv              5.470119
+1  model2_gakubukabe.csv             51.368421
+2   model2_roukakabe.csv             47.337594
+3       model2_insei.csv             29.999328
+4   model2_inselkabe.csv             52.308904
+5      model2_gakubu.csv             96.306287
